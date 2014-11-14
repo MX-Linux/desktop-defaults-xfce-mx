@@ -1,0 +1,7 @@
+[Default Applications]
+text/plain=leafpad.desktop
+application/x-deb=gdebi.desktop
+
+[Added Associations]
+text/plain=leafpad.desktop;
+application/x-deb=gdebi.desktop;

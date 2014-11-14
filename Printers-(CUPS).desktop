@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Printers-(CUPS)
+Comment=Manage printers in a browser
+Exec=xdg-open http://localhost:631
+Icon=printer
+NoDisplay=false
+Type=Application
+Categories=System;

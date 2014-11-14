@@ -1,0 +1,306 @@
+#!/bin/bash
+
+PressAnyKey2Quit()
+{
+if [ -n "$DISPLAY" ];
+  then
+  #if running in X show the "Press any key ..." message
+    (echo) | tee -a "${LOGFILE}"
+    (read -sn 1 -p "Press any key to close this window." -t 999999999 ) | tee -a "${LOGFILE}"
+  else
+  #otherwise just let the installer quit
+    :
+fi
+echo
+rm -rf "${TMP}"
+exit
+}
+
+ExitWithErrorMsg()
+{
+(echo) | tee -a "${LOGFILE}"
+(echo "$errorMsg") | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+(echo '*** check the '"${LOGFILE}"' logfile for additional details ***') | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+(echo '*** exiting installer now ***') | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+PressAnyKey2Quit
+}
+
+# create a logfile with touch
+touch /var/log/mx-nvidia-install_$(date +%Y-%m-%d-%T).log
+LOGFILE="$(ls -1t /var/log/mx-nvidia-install*.log | head -n1)"
+
+TMP=`mktemp -d /tmp/nvidia-installer.XXXXXXXXXX`
+
+export DEBIAN_FRONTEND=noninteractive
+
+SLOT=$(lspci -n | cut -d ':' -f 1-2 | grep '0300' | cut -d ' ' -f 1)
+
+(echo) | tee -a "${LOGFILE}"
+# list detected videocard(s)
+(echo '*** Detected the following videocard(s) ***') | tee -a "${LOGFILE}"
+(for i in $SLOT; do lspci -nns $i; done) | tee -a "${LOGFILE}"
+
+# test if more than one videocard present
+test "$(LC_ALL=en_US lspci -mnn | grep '"VGA compatible controller \[0300\]"' | wc -l)" = "1"
+if [ "$?" -eq 0 ]
+  then
+    :
+  else
+    errorMsg="*** this installer doesn't support systems with multiple videocards or hybrid graphics such as NVIDIA Optimus ***";ExitWithErrorMsg
+fi
+
+# check for nvidia video card, if none found print a message and exit the installer
+lspci -mn | awk '{ gsub("\"",""); if ($2 == "0300" && ($3 == "10de" || $3 == "12d2")) { print $1 } }'| xargs lspci -mns \
+| awk '{ gsub("\"",""); print $3 $4 }' | tr 'a-f' 'A-F' |grep -Eiq ^10de\|^12d2
+if [ "$?" -eq 0 ];
+  then
+    (echo '*** nvidia videocard found ***') | tee -a "${LOGFILE}"
+    (echo) | tee -a "${LOGFILE}"
+  else
+    errorMsg='*** no nvidia videocard found ***';ExitWithErrorMsg
+fi
+
+# save pciid of nvidia card
+PCIID=$(lspci -mn | awk '{ gsub("\"",""); if ($2 == "0300" && ($3 == "10de" || $3 == "12d2")) { print $1 } }'| xargs lspci -mns \
+| awk '{ gsub("\"",""); print $3 $4 }' | tr 'a-f' 'A-F' |grep -Ei ^10de\|^12d2)
+
+# reload package lists
+(echo '*** loading/reloading package lists using `apt-get update` ***') | tee -a "${LOGFILE}"
+LC_ALL=en_US apt-get -q update >> "${LOGFILE}" 2>&1
+#test to see if `apt-get update` succeeded, abort install if it failed
+tac "${LOGFILE}" | grep -m1 '\*\*\* loading/reloading package lists' -B999999 |\
+ grep -q -e^'Err ' -e'connection timed out'$ -e'Unable to connect to ' -e'404  Not Found'\
+                   -e^'W: Failed to fetch ' -e'^E: Some index files failed to download. '
+if [ "$?" -eq 1 ];
+  then
+    (echo '*** apt-get update succeeded ***') | tee -a "${LOGFILE}"
+    (echo) | tee -a "${LOGFILE}"
+  else
+    errorMsg='*** apt-get update failed ***';ExitWithErrorMsg
+fi
+
+# test if wheezy-backports main,contrib & non-free repos are enabled
+#if they are a "-t wheezy-backports" will be appended to the 'apt-get install ...' commands
+prefer=$(apt-cache policy | grep -v T | grep wheezy-backports | grep -o -e contrib -e main -e non-free | sort -u | sed ':a;N;$!ba;s/\n/_/g' | grep 'contrib_main_non-free')
+
+# do a preinstall cleanup of all currently installed *nvidia* packages
+#installer uses apt-get's -y option to allow it to run without user prompts
+#this is potentially dangerous because it can result in unwanted/unexpected removals
+#so create a whitelist of nvidia related packages that can be removed
+WHITELIST=$(apt-cache pkgnames | grep nvidia |sort -u | awk '{print $1}')
+WHITELIST=$WHITELIST" glx-alternative-mesa"
+WHITELIST=$WHITELIST" glx-diversions"
+WHITELIST=$(echo $WHITELIST | sed 's: :\\|:g')
+
+(echo) | tee -a "${LOGFILE}"
+(echo '*** doing a preinstall cleanup of any currently installed *nvidia* packages ***') | tee -a "${LOGFILE}"
+
+# simulate removal of all *nvidia* packages, check removals against approved removals in the whitelist
+LC_ALL=en_US apt-get purge nvidia? -s | grep ^Purg | awk '{print $2}' | cut -f 1 -d : | sort -u | grep -q -v $WHITELIST
+if [ "$?" -eq 0 ];
+  then
+  #packages will be removed that aren't in the whitelist, so don't do it & abort install.
+    errorMsg="Unexpected removal of the following packages: "
+    errorMsg=$errorMsg$(apt-get purge nvidia? -s | grep ^Purg | awk '{print $2}' | cut -f 1 -d : | sort -u | grep -v $WHITELIST);ExitWithErrorMsg
+  else
+  #purge all currently installed nvidia packages
+    LC_ALL=en_US apt-get -y -q purge nvidia? >> "${LOGFILE}" 2>&1
+  #test to see if the preinstall cleanup was successfull
+  if [ "$?" -eq 0 ];
+    then
+      (echo '*** preinstall cleanup complete ***') | tee -a "${LOGFILE}"
+      (echo) | tee -a "${LOGFILE}"
+    else
+      errorMsg='*** preinstall cleanup failed ***';ExitWithErrorMsg
+  fi
+fi
+
+(echo) | tee -a "${LOGFILE}"
+(echo '*** wget downloading nvidia-detect from snapshot.debian.org ***') | tee -a "${LOGFILE}"
+LC_ALL=en_US wget -q http://snapshot.debian.org/archive/debian/20140131T221256Z/pool/non-free/n/nvidia-graphics-drivers/nvidia-detect_331.38-2_i386.deb -P $TMP 
+#test to see if nvidia-detect wget download succeeded
+if [ "$?" -eq 0 ];
+  then
+    (echo '*** wget download of nvidia-detect complete ***') | tee -a "${LOGFILE}"
+    (echo) | tee -a "${LOGFILE}"
+  else
+    errorMsg='*** wget download of nvidia-detect failed ***';ExitWithErrorMsg
+fi
+
+(echo) | tee -a "${LOGFILE}"
+(echo '*** installing nvidia-detect ***') | tee -a "${LOGFILE}"
+LC_ALL=en_US dpkg -i "${TMP}"/nvidia-detect_331.38-2_i386.deb >> "${LOGFILE}" 2>&1
+dpkg -l | grep -q ^ii'  '.*nvidia-detect.*331.38-2
+#test to see if nvidia-detect install succeeded
+if [ "$?" -eq 0 ];
+  then
+    (echo '*** nvidia-detect install complete ***') | tee -a "${LOGFILE}"
+    (echo) | tee -a "${LOGFILE}"
+  else
+    errorMsg='*** nvidia-detect install failed ***';ExitWithErrorMsg
+fi
+rm "${TMP}"/nvidia-detect_331.38-2_i386.deb
+
+(echo) | tee -a "${LOGFILE}"
+(echo '*** installing/reinstalling module-assistant ***') | tee -a "${LOGFILE}"
+# install/reinstall module-assistant package.
+#note: won't actually be using module-assistant method to build the kernel module
+LC_ALL=en_US apt-get -y -q --reinstall install module-assistant >> "${LOGFILE}" 2>&1
+#test to see if the install/reinstall of module-assistant succeeded
+if [ "$?" -eq 0 ];
+  then
+    (echo '*** module-assistant install complete ***') | tee -a "${LOGFILE}"
+    (echo) | tee -a "${LOGFILE}"
+  else
+    errorMsg='*** module-assistant failed ***';ExitWithErrorMsg
+fi
+
+# run the `m-a prepare` command to install the linux-headers-* and
+#build-essential packages, it also ensures that a `sane compiler environment` exists
+(echo) | tee -a "${LOGFILE}"
+(echo '*** running m-a prepare ***') | tee -a "${LOGFILE}"
+LC_ALL=en_US m-a -q -i -t prepare >> "${LOGFILE}" 2>&1
+#test to see if m-a prepare` command succeeded
+#might need to do a more elaborate pass/fail test here
+if [ "$?" -eq 0 ];
+  then
+    (echo '*** m-a prepare complete ***') | tee -a "${LOGFILE}"
+    (echo) | tee -a "${LOGFILE}"
+  else
+    errorMsg='*** m-a prepare failed ***';ExitWithErrorMsg
+fi
+
+# note: 'nvidia-detect' command returns version of nvidia driver to install
+(echo) | tee -a "${LOGFILE}"
+(echo '*** running nvidia-detect to select driver version         ***') | tee -a "${LOGFILE}"
+LC_ALL=en_US nvidia-detect >> "${LOGFILE}" 2>&1
+
+NVDRIVER=""
+NVSETTINGS=""
+
+case $(LC_ALL=en_US nvidia-detect  | awk '/^  /{print $1}') in
+
+                    nvidia-glx) grep -q $PCIID /usr/share/nvidia/nvidia.ids
+                                if [ "$?" -eq 0 ];
+                                  then
+                                    NVDRIVER="nvidia-driver         "
+                                    NVSETTINGS="nvidia-settings"
+                                  else
+                                    test $prefer
+                                    if [ "$?" -eq 0 ];
+                                      then
+                                        NVDRIVER="nvidia-legacy-304xx-driver "
+                                        NVSETTINGS="nvidia-settings-legacy-304xx"
+                                      else
+                                        NVDRIVER="nvidia-glx                 "
+                                        NVSETTINGS="nvidia-settings"
+                                    fi
+                                fi
+                                ;;
+
+       nvidia-glx-legacy-173xx) NVDRIVER="nvidia-glx-legacy-173xx    "
+                                NVSETTINGS="nvidia-settings-legacy-173xx"
+                                ;;
+
+        nvidia-glx-legacy-96xx) NVDRIVER="nvidia-glx-legacy-96xx     "
+                                test ! $prefer || NVSETTINGS="nvidia-settings-legacy-96xx"
+                                test   $prefer || NVSETTINGS="nvidia-settings-legacy-173xx"
+                                ;;
+
+                 nvidia-driver) NVDRIVER="nvidia-driver              "
+                                NVSETTINGS="nvidia-settings"
+                                ;;
+
+nvidia-driver/wheezy-backports) NVDRIVER="nvidia-driver              "
+                                NVSETTINGS="nvidia-settings"
+                                ;;
+
+    nvidia-legacy-304xx-driver) NVDRIVER="nvidia-legacy-304xx-driver "
+                                NVSETTINGS="nvidia-settings-legacy-304xx"
+                                ;;
+
+    nvidia-legacy-173xx-driver) NVDRIVER="nvidia-legacy-173xx-driver "
+                                NVSETTINGS="nvidia-settings-legacy-173xx"
+                                ;;
+
+     nvidia-legacy-96xx-driver) NVDRIVER="nvidia-legacy-96xx-driver  "
+                                NVSETTINGS="nvidia-settings-legacy-96xx"
+                                ;;
+
+                             *) :
+                                ;;
+esac
+
+# test to see if nvidia-detect and case selection succeeded
+if [ "$?" -eq 0 ];
+  then
+    (echo '*** nvidia-detect complete                                 ***') | tee -a "${LOGFILE}"
+    (echo '*** the '$NVDRIVER' package will be installed ***') | tee -a "${LOGFILE}"
+    (echo) | tee -a "${LOGFILE}"
+  else
+    errorMsg='*** nvidia-detect failed ***';ExitWithErrorMsg
+fi
+
+if [ ! $NVDRIVER = "" ];
+  then
+    (echo '*** starting nvidia dkms driver install           ***') | tee -a "${LOGFILE}"
+    (echo '***                                               ***') | tee -a "${LOGFILE}"
+    (echo '*** this will take a while, please be patient     ***') | tee -a "${LOGFILE}"
+    (echo '***                                               ***') | tee -a "${LOGFILE}"
+    LC_ALL=en_US apt-get -y -q install $NVDRIVER $NVSETTINGS $(test ! $prefer || echo -t wheezy-backports) >> "${LOGFILE}" 2>&1
+    #test to see if dkms install succeeded
+    tac "${LOGFILE}" | grep -m1 ^'\*\*\* running nvidia-detect to select driver version \*\*\*' -B999999 |\
+    grep -Eq -e^'Err ' -e'connection timed out'$ -e'Unable to connect to ' -e'404  Not Found' \
+             -e^'W: Failed to fetch ' -e^'E: Some index files failed to download. ' \
+             -e^'Error! Bad return status for module build on kernel: '`uname -r` \
+             -e^'Mismatching nvidia kernel module loaded' \
+             -e^'The Nvidia driver that is being installed'.*' does not match' 
+    if [ "$?" -eq 1 ];
+      then
+        (echo '*** nvidia dkms driver install complete           ***') | tee -a "${LOGFILE}"
+        (echo) | tee -a "${LOGFILE}"
+      else
+        errorMsg='*** nvidia dkms driver install failed ***'; ExitWithErrorMsg
+    fi
+   else
+     errorMsg='*** no nvidia driver was found that supports your videocard (or not using nvidia video) ***';ExitWithErrorMsg
+fi
+
+# make a timestamped backup of existing xorg.conf (if there is one)
+(echo) | tee -a "${LOGFILE}"
+(echo '*** backing up existing /etc/X11/xorg.conf file (if there is one) ***') | tee -a "${LOGFILE}"
+2>/dev/null cp /etc/X11/xorg.conf /etc/X11/xorg.conf-BackedUp-on-$(date +%Y-%m-%d-%T)
+
+2>/dev/null rm /etc/X11/xorg.conf
+(echo '*** xorg.conf backup complete ***') | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+
+# create a minimal /etc/X11/xorg.conf.d/20-nvidia.conf file
+#  grepped from the /usr/lib/nvidia/create-xorg-nvidia-conf-experimental
+#  file that was installed by the nvidia-support package
+#
+#  first create /etc/X11/xorg.conf.d if it doesn't already exist
+2>/dev/null mkdir -p /etc/X11/xorg.conf.d
+#
+#  create the conf file
+(echo) | tee -a "${LOGFILE}"
+(echo '*** creating minimal xorg.conf (/etc/X11/xorg.conf.d/20-nvidia.conf) ***') | tee -a "${LOGFILE}"
+grep Device -A9 /usr/lib/nvidia/create-xorg-nvidia-conf-experimental > /etc/X11/xorg.conf.d/20-nvidia.conf
+(echo '*** complete ***') | tee -a "${LOGFILE}"
+
+# remove nouveau module and insert nvidia module
+(echo) | tee -a "${LOGFILE}"
+(echo '*** unloading nouveau driver module & loading nvidia driver module with modprobe ***') | tee -a "${LOGFILE}"
+modprobe -r nouveau 2>/dev/null
+modprobe nvidia 2>/dev/null
+(echo '*** complete ***') | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+(echo '*** Install completed ***') | tee -a "${LOGFILE}"
+(echo) | tee -a "${LOGFILE}"
+PressAnyKey2Quit
+

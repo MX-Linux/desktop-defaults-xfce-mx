@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Nvidia_Install
+Comment=Install nVidia driver
+Exec=su-to-root -c /usr/local/bin/nvidia-install
+Icon=emblem-system.png
+NoDisplay=false
+Type=Application
+Categories=System;
+Terminal=true

@@ -1,0 +1,110 @@
+desktop-defaults-xfce-mx (0.2.0) unstable; urgency=low
+  
+  * Added symlink jp to jp106 keymap to qwerty folder.
+  * Removed qupzilla configs.
+  * Changed deault theme and icons.
+  * Added mx-switchuser to whisker menu.
+  * Config files set browser to firefox.
+  * Added mirage to open image files.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 22 Jun 2014 20:30:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.9) unstable; urgency=low
+  
+  * set keyboard shortcuts to volume control file.
+  * Only include Desktop folder in skel. Remove others.
+  * Created /usr/local/share/mx folder for cd label, installed.txt and Defaultbookmarks.html.
+  * Cleared out qupzilla history cache.
+  * Removed help from panel.
+  * Qupzilla opens help page as default in panel.
+  * Alterations to panel. 
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 21 Mar 2014 21:10:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.8) unstable; urgency=low
+  
+  * using xfce4-mixer for volume.
+  * panel width set to 35
+  * fixed various bookmarks.html issues in qupzilla
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 28 Feb 2014 22:40:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.7) unstable; urgency=low
+  
+  * Changed kbd.sh to only set layout. Bug fix.
+  * xfce4-settings-manager set in whisker menu
+  * nvidia-installer version -4f
+  * removed history from qupzilla
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 25 Feb 2014 18:40:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.6) unstable; urgency=low
+  
+  * Added various symlinks to /usr/share/keymaps/i386/*
+  * Removed keyboard applet from panel.
+  * Added xfce wiki to bookmarks.
+  * Using fbxkb to indicate keyboard.
+  * Added kbd.sh script to 'kick' fbxkb at first desktop. 
+  * Removed codecs.sh (now using mx-codecs app).
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 24 Feb 2014 23:40:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.5) unstable; urgency=low
+ 
+  * Included Printers-(CUPS).desktop file.
+  * Added Nvidia_Install.desktop and install script.
+  * Changes to Thunar config.
+  * Included keyboard applet to panel.
+  * Added light wallpaper.
+  * Removed documentation to its own deb package.
+  * Set default editor to leafpad from mousepad.
+  * Added default mp3 player as clementine.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 18 Feb 2014 22:10:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.4) unstable; urgency=low
+ 
+  * fixed qupzilla config bug to allow user to login as jerry
+  * updated documentation.
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 30 Jan 2014 22:25:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.3) unstable; urgency=low
+ 
+  * Added synaptics.conf for touchpad.
+  * replaced update-notify with add-notifier to xfce panel
+  * midori configs removed
+  * added Terminal config to set default size (for ceni)
+  * use xdg-open for browser.
+  * updated documentation
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 29 Jan 2014 12:55:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.2) unstable; urgency=low
+ 
+  * Various edits to config files.
+  * Changes to docs.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 21 Jan 2014 23:20:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.1) unstable; urgency=low
+ 
+  * Various edits to config files.
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 16 Jan 2014 23:50:00 +0200
+
+
+desktop-defaults-xfce-mx (0.1.0) unstable; urgency=low
+ 
+  * Initial release.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 14 Jan 2014 11:50:00 +0200

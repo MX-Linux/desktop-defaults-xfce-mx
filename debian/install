@@ -1,0 +1,17 @@
+skel/.[a-zA-Z]*            /etc/skel
+root/.[a-zA-Z]*            /root
+changelog.gz               /usr/share/doc/desktop-defaults-xfce-mx 
+copyright                  /usr/share/doc/desktop-defaults-xfce-mx
+icons/*                    /usr/local/share/icons
+backgrounds/*              /usr/local/share/backgrounds
+Help.desktop               /usr/share/applications
+Nvidia_Install.desktop     /usr/share/applications
+Printers-(CUPS).desktop    /usr/share/applications
+gtk-2.0/*                  /etc/gtk-2.0
+52-force-root-for-admin-auth.conf /etc/polkit-1/localauthority.conf.d
+X11/*                      /etc/X11
+azerty/*                   /usr/share/keymaps/i386/azerty
+qwerty/*                   /usr/share/keymaps/i386/qwerty
+qwertz/*                   /usr/share/keymaps/i386/qwertz
+kbd.sh                     /usr/local/bin
+mx/*                       /usr/local/share/mx 
