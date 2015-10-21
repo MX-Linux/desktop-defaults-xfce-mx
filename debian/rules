@@ -12,7 +12,7 @@ clean:
 	dh_clean
 
 install:
-	dh_install nvidia-install /usr/local/bin 
+	dh_install 
 	dh_testdir
 	dh_testroot
 

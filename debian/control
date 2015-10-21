@@ -9,4 +9,4 @@ Homepage: http://antix.mepis.org
 Package: desktop-defaults-xfce-mx
 Architecture: all
 Recommends: lightdm
-Description: desktop defaults for MX-14 Xfce.
+Description: desktop defaults for MX-15 Xfce.

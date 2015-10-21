@@ -1,3 +1,37 @@
+desktop-defaults-xfce-mx (0.3.1) unstable; urgency=low
+  
+  * Panel changes
+  * Thunar config change - catfish
+  * mx-menu-editor added
+  * firefox icon
+  * whisker menu changes
+  * include horizontal and vertical panel config files 
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 15 Oct 2015 15:19:00 +0200
+
+
+desktop-defaults-xfce-mx (0.3.0) unstable; urgency=low
+  
+  * Changes for MX-15
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 06 Oct 2015 14:42:00 +0200
+
+
+desktop-defaults-xfce-mx (0.2.2) unstable; urgency=low
+  
+  * Changes for MX14.4 ie default wm theme and qt theme.
+
+ -- anticapitalista <antiX@operamail.com>  Sat, 14 March 2015 20:34:00 +0200
+
+
+desktop-defaults-xfce-mx (0.2.1) unstable; urgency=low
+  
+  * Fixed screenshooter bug.
+  * Added MX-tools to whisker menu.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 24 Nov 2014 23:36:00 +0200
+
+
 desktop-defaults-xfce-mx (0.2.0) unstable; urgency=low
   
   * Added symlink jp to jp106 keymap to qwerty folder.

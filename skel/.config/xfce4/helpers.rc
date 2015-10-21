@@ -1,5 +1,5 @@
-WebBrowser=custom-WebBrowser
-MailReader=sylpheed-claws
+WebBrowser=firefox
+MailReader=thunderbird
 FileManager=Thunar
 TerminalEmulator=xfce4-terminal
 

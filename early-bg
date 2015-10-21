@@ -1,0 +1,4 @@
+#!/bin/sh
+PATH=$PATH:/usr/local/bin
+img=/usr/local/share/backgrounds/MX15/lightdm/Squam_Lake.jpg
+(feh --bg-scale $img)&
