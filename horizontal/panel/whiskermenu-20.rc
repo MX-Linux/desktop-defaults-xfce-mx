@@ -1,7 +1,7 @@
 favorites=xfce4-run.desktop,exo-file-manager.desktop,libreoffice-startcenter.desktop,firefox.desktop,xfce4-terminal.desktop,mx-tools.desktop
-recent=xfce4-power-manager-settings.desktop,xfce4-clipman.desktop,exo-file-manager.desktop,xfce4-terminal.desktop,firefox.desktop,xfce4-appfinder.desktop,synaptic.desktop,smtube.desktop
+recent=xfce4-terminal.desktop,xfce4-power-manager-settings.desktop,xfce4-clipman.desktop,exo-file-manager.desktop,firefox.desktop,xfce4-appfinder.desktop,synaptic.desktop,smtube.desktop
 button-title=Applications Menu
-button-icon=/usr/local/share/icons/mxfcelogo.png
+button-icon=/usr/local/share/icons/mxfcelogo-rounded.png
 button-single-row=false
 show-button-title=false
 show-button-icon=true

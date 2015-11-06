@@ -24,6 +24,7 @@ image/png=mirage.desktop
 image/jpg=mirage.desktop
 image/jpeg=mirage.desktop
 image/gif=mirage.desktop
+image/bmp=mirage.desktop
 application/vnd.ms-htmlhelp=firefox.desktop
 application/xhtml+xml=firefox.desktop
 text/html=firefox.desktop

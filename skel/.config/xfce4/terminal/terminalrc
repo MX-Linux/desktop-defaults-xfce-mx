@@ -15,4 +15,5 @@ MiscTabCloseButtons=TRUE
 MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
+FontName=Droid Sans Mono 11
 

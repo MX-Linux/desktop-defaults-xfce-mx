@@ -1,10 +1,9 @@
 skel/.[a-zA-Z]*            /etc/skel
 root/.[a-zA-Z]*            /root
-changelog.gz               /usr/share/doc/desktop-defaults-xfce-mx 
-copyright                  /usr/share/doc/desktop-defaults-xfce-mx
 icons/*                    /usr/local/share/icons
 Help.desktop               /usr/share/applications
 Printers-(CUPS).desktop    /usr/share/applications
+Window_Buttons.desktop     /usr/share/applications
 gtk-2.0/*                  /etc/gtk-2.0
 52-force-root-for-admin-auth.conf /etc/polkit-1/localauthority.conf.d
 X11/*                      /etc/X11
@@ -14,6 +13,7 @@ qwertz/*                   /usr/share/keymaps/i386/qwertz
 kbd.sh                     /usr/local/bin
 early-bg                   /usr/local/bin
 pulse-start                /usr/local/bin 
+clock12or24                /usr/local/bin 
 mx/*                       /usr/local/share/mx 
 vertical/*                 /usr/local/share/appdata/panels/vertical
 horizontal/*               /usr/local/share/appdata/panels/horizontal 

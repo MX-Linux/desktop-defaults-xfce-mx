@@ -1,0 +1,48 @@
+#!/bin/bash
+
+#change orage clock preference to 12 hour in case of USA or Great Britain
+
+#this function changes the two xfce4-orageclock-plugin-1.rc files (in /home/demo/.config/xfce4/panel/ and /etc/skel/.config/xfce4/panel/
+#from what should be a default %H:%M international 24 hour standard
+
+#Pull locale info from F2 Live Boot Menu Setup
+
+LNG=$(cat /etc/default/locale|grep LANG)
+
+#Function that polls the various config files for %H (24 hour) and then changes to %I (12 Hour)
+
+changeto12hour()
+{
+#the first 4 are for the orage clock plugin
+sed -i -r s/data0=%H/data0=%I/ /home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
+sed -i -r s/data0=%H/data0=%I/ /etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
+sed -i -r s/data0=%H/data0=%I/ /usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc
+sed -i -r s/data0=%H/data0=%I/ /usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc
+
+#these next 4 lines are for the xfce4-clock plugin
+#sed -i -r s/%H/%I/ /home/demo/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+#sed -i -r s/%H/%I/ /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+#sed -i -r s/%H/%I/ /usr/local/share/appdata/panels/horizontal/xfce4-panel.xml
+#sed -i -r s/%H/%I/ /usr/local/share/appdata/panels/vertical/xfce4-panel.xml
+
+}
+
+#look for a check file and if present exit, otherwise create check file and then parse language
+
+if [ -e /etc/clock-ckd ]; then
+  :
+
+else
+
+  touch /etc/clock-ckd
+
+#the case statement parses the default locale file in /etc/default/locale for USA and Great Britain codes.  Others can be added
+
+case $LNG in
+
+	LANG=en_US.UTF-8|LANG=ar_EG.UTF-8|LANG=el_GR.UTF-8|LANG=sq_AL.UTF-8) changeto12hour
+	;;
+
+esac
+fi
+
