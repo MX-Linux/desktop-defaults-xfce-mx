@@ -6,5 +6,8 @@
     <property name="show-tray-icon" type="bool" value="true"/>
     <property name="brightness-switch-restore-on-exit" type="int" value="1"/>
     <property name="brightness-switch" type="int" value="0"/>
+    <property name="lid-action-on-battery" type="uint" value="0"/>
+    <property name="logind-handle-lid-switch" type="bool" value="false"/>
+    <property name="lid-action-on-ac" type="uint" value="0"/>
   </property>
 </channel>

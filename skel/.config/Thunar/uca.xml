@@ -126,4 +126,22 @@
    <other-files/>
    <text-files/>
 </action>
+<action>
+	<icon></icon>
+	<name>Make Startup Sound</name>
+	<unique-id>1447629663342880-3</unique-id>
+	<command>echo %f &gt;~/.config/startupsound.conf</command>
+	<description>Make selected Startup Sound</description>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Make Logout Sound</name>
+	<unique-id>1447629663342880-4</unique-id>
+	<command>echo %f &gt;~/.config/logoutsound.conf</command>
+	<description>Make selected Logout Sound</description>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
 </actions>

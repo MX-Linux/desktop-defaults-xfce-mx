@@ -1,3 +1,21 @@
+desktop-defaults-xfce-mx (0.3.3.1) unstable; urgency=low
+  
+  * Alphabetical order - favorites. Remove firefox and thunar from list
+  * Changes to xfce4-power-manager.xml to include "Switch off display"
+  * Added custom Thunar to turn on/off login/logout sounds
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 20 Nov 2015 17:10:00 +0200
+
+
+desktop-defaults-xfce-mx (0.3.3) unstable; urgency=low
+  
+  * Changes to early-bg to set any lightdm backround image
+  * Added an_AU, en_CA and en_NZ to 12 hour default - clock12to24
+  * Added <property name="SoundThemeName" type="string" value="Borealis"/> for events sound
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 16 Nov 2015 15:59:00 +0200
+
+
 desktop-defaults-xfce-mx (0.3.2) unstable; urgency=low
   
   * localised panel desktop files for thunar and firefox
