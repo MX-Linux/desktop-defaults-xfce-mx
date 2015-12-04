@@ -1,4 +1,4 @@
-desktop-defaults-xfce-mx (0.3.3.1) unstable; urgency=low
+desktop-defaults-xfce-mx (0.3.3.1) mx; urgency=low
   
   * Alphabetical order - favorites. Remove firefox and thunar from list
   * Changes to xfce4-power-manager.xml to include "Switch off display"

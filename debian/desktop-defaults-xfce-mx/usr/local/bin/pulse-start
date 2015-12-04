@@ -1,5 +1,0 @@
-#!/bin/bash
-pulseaudio --start
-sleep 2
-volumeicon &
-exit 0
