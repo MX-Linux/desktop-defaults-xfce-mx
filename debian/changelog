@@ -1,3 +1,11 @@
+desktop-defaults-xfce-mx (0.3.4) mx; urgency=low
+  
+  * change in default horizontal panel to property name="rows" type="uint" value="1"
+  * xfce4-notifyd.xml changed to Greybird-thick-grip from Smoke
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 14 Dec 2015 00:32:00 +0200
+
+
 desktop-defaults-xfce-mx (0.3.3.1) mx; urgency=low
   
   * Alphabetical order - favorites. Remove firefox and thunar from list
