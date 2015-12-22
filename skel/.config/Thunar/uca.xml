@@ -42,7 +42,7 @@
    <icon></icon>
    <name>Ownership to Root</name>
    <unique-id>1388696949105908-1</unique-id>
-   <command>gksu &quot;chown -R root %F&quot;</command>
+   <command>gksu &quot;chown -R root:root %F&quot;</command>
    <description>Change to administrative permissions </description>
    <patterns>*</patterns>
    <directories/>
@@ -56,7 +56,7 @@
    <icon></icon>
    <name>Ownership to user</name>
    <unique-id>1388702559256309-5</unique-id>
-   <command>gksu &quot;chown -R $USER %F&quot;</command>
+   <command>gksu &quot;chown -R $USER:$USER %F&quot;</command>
    <description>Removes use restrictions</description>
    <patterns>*</patterns>
    <directories/>
