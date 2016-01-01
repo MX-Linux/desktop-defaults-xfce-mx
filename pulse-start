@@ -1,5 +1,5 @@
 #!/bin/bash
-pulseaudio --start
+start-pulseaudio-x11
 sleep 2
 volumeicon &
 exit 0
