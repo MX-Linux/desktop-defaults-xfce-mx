@@ -1,0 +1,20 @@
+#!/bin/bash
+
+##script to detect multiple keyboards at login and launch fbxkb if found.
+
+
+## grep for keyboards 
+
+ismulti=$(grep XKBLAYOUT /etc/default/keyboard | grep ,)
+
+
+# start fbxkb if present
+
+if [ "$ismulti" = "" ]; then
+	echo "only one keyboard"
+	else
+	echo "multiple keyboards found"
+	fbxkb &
+fi
+
+exit 0

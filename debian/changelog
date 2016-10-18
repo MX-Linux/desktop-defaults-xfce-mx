@@ -1,3 +1,9 @@
+desktop-defaults-xfce-mx16 (0.3.6+nmu1) mx; urgency=medium
+
+  * Renamed to mx16 
+
+ -- anticapitalista <antix@operamail.com>  Sat, 15 Oct 2016 18:27:54 +0300
+
 desktop-defaults-xfce-mx (0.3.6) mx; urgency=low
   
   * pulseaudio crash fixes bug 342

@@ -1,4 +1,4 @@
-Source: desktop-defaults-xfce-mx
+Source: desktop-defaults-xfce-mx16
 Section: system
 Priority: optional
 Maintainer: anticapitalista <antiX@operamail.com>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.4
 Homepage: http://antix.mepis.org
 
-Package: desktop-defaults-xfce-mx
+Package: desktop-defaults-xfce-mx16
 Architecture: all
 Recommends: lightdm
-Description: desktop defaults for MX-15 Xfce.
+Description: desktop defaults for MX-16 Xfce.

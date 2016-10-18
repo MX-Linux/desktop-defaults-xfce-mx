@@ -8,5 +8,5 @@ Exec=/usr/bin/fbxkb
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
-Hidden=false
+Hidden=true
 
