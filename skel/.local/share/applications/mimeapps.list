@@ -28,4 +28,5 @@ image/bmp=mirage.desktop
 application/vnd.ms-htmlhelp=firefox.desktop
 application/xhtml+xml=firefox.desktop
 text/html=firefox.desktop
-
+application/x-java-archive=Java.desktop
+text/x-python=Py-Loader.desktop

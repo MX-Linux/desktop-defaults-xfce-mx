@@ -1,3 +1,9 @@
+desktop-defaults-xfce-mx16 (0.3.7) mx; urgency=medium
+
+  * Java.desktop and Py-Loader.desktop mimetypes added 
+
+ -- anticapitalista <antix@operamail.com>  Fri, 21 Oct 2016 15:19:59 +0300
+
 desktop-defaults-xfce-mx16 (0.3.6+nmu1) mx; urgency=medium
 
   * Renamed to mx16 
