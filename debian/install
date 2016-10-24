@@ -1,7 +1,6 @@
 skel/.[a-zA-Z]* 		etc/skel
 root/.[a-zA-Z]*            	root
 icons/*                    	usr/local/share/icons
-Help.desktop               	usr/share/applications
 Printers-(CUPS).desktop    	usr/share/applications
 Window_Buttons.desktop     	usr/share/applications
 gtk-2.0/*                  	etc/gtk-2.0

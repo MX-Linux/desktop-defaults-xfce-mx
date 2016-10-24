@@ -1,3 +1,9 @@
+desktop-defaults-xfce-mx16 (0.3.8) mx; urgency=medium
+
+  * Removed help.desktop 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 24 Oct 2016 12:10:22 +0300
+
 desktop-defaults-xfce-mx16 (0.3.7) mx; urgency=medium
 
   * Java.desktop and Py-Loader.desktop mimetypes added 
