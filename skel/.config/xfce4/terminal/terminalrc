@@ -19,4 +19,4 @@ FontName=Droid Sans Mono 11
 DropdownStatusIcon=FALSE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-DropdownWidth=50
+DropdownWidth=80
