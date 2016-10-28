@@ -1,0 +1,133 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+   <icon></icon>
+   <name>Run command ...</name>
+   <unique-id>1391443541044100-3</unique-id>
+   <command>xfce4-appfinder --collapsed</command>
+   <description>Launch a program</description>
+   <patterns>*</patterns>
+   <directories/>
+   <audio-files/>
+   <image-files/>
+   <other-files/>
+   <text-files/>
+   <video-files/>
+</action>
+<action>
+   <icon>utilities-terminal</icon>
+   <name>Open Terminal Here</name>
+   <unique-id>1388590880939619-1</unique-id>
+   <command>exo-open --working-directory %f --launch TerminalEmulator</command>
+   <description>Example for a custom action</description>
+   <patterns>*</patterns>
+   <startup-notify/>
+   <directories/>
+</action>
+<action>
+   <icon></icon>
+   <name>Ownership to Root</name>
+   <unique-id>1388696949105908-1</unique-id>
+   <command>gksu &quot;chown -R root:root %F&quot;</command>
+   <description>Change to administrative permissions </description>
+   <patterns>*</patterns>
+   <directories/>
+   <audio-files/>
+   <image-files/>
+   <other-files/>
+   <text-files/>
+   <video-files/>
+</action>
+<action>
+   <icon></icon>
+   <name>Ownership to user</name>
+   <unique-id>1388702559256309-5</unique-id>
+   <command>gksu &quot;chown -R $USER:$USER %F&quot;</command>
+   <description>Removes use restrictions</description>
+   <patterns>*</patterns>
+   <directories/>
+   <audio-files/>
+   <image-files/>
+   <other-files/>
+   <text-files/>
+   <video-files/>
+</action>
+<action>
+   <icon></icon>
+   <name>Edit as Root</name>
+   <unique-id>1389150009142611-4</unique-id>
+   <command>gksu leafpad %f</command>
+   <description>Make administrative changes to text files</description>
+   <patterns>*</patterns>
+   <other-files/>
+   <text-files/>
+</action>
+<action>
+   <icon></icon>
+   <name>Find files here</name>
+   <unique-id>1391015829778456-1</unique-id>
+   <command>catfish --path=%f</command>
+   <description>Search current folder</description>
+   <patterns>*</patterns>
+   <directories/>
+   <text-files/>
+</action>
+<action>
+   <icon></icon>
+   <name>Create symlink</name>
+   <unique-id>1394124450909421-1</unique-id>
+   <command>ln -s %f &quot;%n (symlink)&quot;</command>
+   <description>Softlink bewteen two files or directories</description>
+   <patterns>*</patterns>
+   <startup-notify/>
+   <directories/>
+   <other-files/>
+   <text-files/>
+</action>
+<action>
+   <icon>folder-publicshare</icon>
+   <name>Share a folder on your network</name>
+   <unique-id>1399025775400525-1</unique-id>
+   <command>gksu system-config-samba %d</command>
+   <description>Configure file sharing</description>
+   <patterns>*</patterns>
+   <directories/>
+</action>
+<action>
+   <icon></icon>
+   <name>Compute md5sum</name>
+   <unique-id>1426501025005582-4</unique-id>
+   <command>yad --info --title=&quot;Check md5sum for %n&quot; --text=&quot;$(md5sum %n)&quot; | yad --width=350 --height=250 --progress --percentage=&quot;50&quot; --auto-kill --auto-close --title=&quot;Checksum utility&quot; --text=&quot;Calculating md5sum for %n&quot;</command>
+   <description>Display checksum of ISO</description>
+   <patterns>*.iso;*.ISO</patterns>
+   <other-files/>
+</action>
+<action>
+   <icon></icon>
+   <name>Check data integrity</name>
+   <unique-id>1426501047462724-5</unique-id>
+   <command>yad --info --title=&quot;Check md5 for %n&quot; --text=&quot;$(md5sum -c %f)&quot; | yad --progress --percentage=&quot;50&quot; --auto-kill --auto-close --title=&quot;Checksum utility&quot; --text=&quot;Checking md5sum for %n&quot;</command>
+   <description>Compare ISO and md5sum files</description>
+   <patterns>*.md5;*.md5sum</patterns>
+   <other-files/>
+   <text-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Make Startup Sound</name>
+	<unique-id>1447629663342880-3</unique-id>
+	<command>echo %f &gt;~/.config/startupsound.conf</command>
+	<description>Make selected Startup Sound</description>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Make Logout Sound</name>
+	<unique-id>1447629663342880-4</unique-id>
+	<command>echo %f &gt;~/.config/logoutsound.conf</command>
+	<description>Make selected Logout Sound</description>
+	<patterns>*</patterns>
+	<audio-files/>
+</action>
+</actions>

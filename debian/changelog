@@ -1,3 +1,9 @@
+desktop-defaults-xfce-mx16 (0.3.10) mx; urgency=medium
+
+  * pulled in orage changes from d_o. 
+
+ -- anticapitalista <antix@operamail.com>  Fri, 28 Oct 2016 21:23:16 +0300
+
 desktop-defaults-xfce-mx16 (0.3.9) mx; urgency=medium
 
   * changed width of terminal from 50 t0 80
