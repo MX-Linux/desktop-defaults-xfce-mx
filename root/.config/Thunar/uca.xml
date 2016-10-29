@@ -26,6 +26,20 @@
 </action>
 <action>
    <icon></icon>
+   <name>Open root Thunar here</name>
+   <unique-id>1391443434179984-1</unique-id>
+   <command>gksu thunar %f</command>
+   <description>Open this folder with administrative rights</description>
+   <patterns>*</patterns>
+   <directories/>
+   <audio-files/>
+   <image-files/>
+   <other-files/>
+   <text-files/>
+   <video-files/>
+</action>
+<action>
+   <icon></icon>
    <name>Ownership to Root</name>
    <unique-id>1388696949105908-1</unique-id>
    <command>gksu &quot;chown -R root:root %F&quot;</command>

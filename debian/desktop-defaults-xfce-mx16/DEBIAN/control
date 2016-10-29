@@ -1,8 +1,8 @@
 Package: desktop-defaults-xfce-mx16
-Version: 0.3.9
+Version: 0.3.10
 Architecture: all
 Maintainer: anticapitalista <antiX@operamail.com>
-Installed-Size: 413
+Installed-Size: 503
 Recommends: lightdm
 Section: system
 Priority: optional
