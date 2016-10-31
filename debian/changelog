@@ -1,3 +1,9 @@
+desktop-defaults-xfce-mx16 (0.3.11) mx; urgency=medium
+
+  * included network_manager_restart.desktop
+
+ -- anticapitalista <antix@operamail.com>  Mon, 31 Oct 2016 14:49:08 +0200
+
 desktop-defaults-xfce-mx16 (0.3.10) mx; urgency=medium
 
   * pulled in orage changes from d_o
