@@ -35,8 +35,8 @@ d654892b5eeb285bd3e3caaa20ad2e2b  root/.config/xfce4/xfconf/xfce-perchannel-xml/
 80630e253721cefccca4c5ed4e6d4527  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 df84662e4b047dfb88fd7a3175f491ce  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mime-settings.xml
 f593616457933ef8b32844cba5b26f2a  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
-d72c8f86b3df8fa51731501d550b8381  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
-7e6308e2f49ec4db99f0f9bcc7eb5ec0  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+6e13dafb5c34275f5903c0e376a0b7b2  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+87f90697263e11c6c3bb82d6234b4c2e  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 1e93a1e4a02bf58be37244c31b5e6aa8  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
 fea9eb9aa1d4825867f18023c16ac33a  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
 4131ef338a053c56eef7f21b30a44bc5  root/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
