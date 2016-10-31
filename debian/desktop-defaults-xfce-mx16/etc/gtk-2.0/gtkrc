@@ -1,0 +1,4 @@
+style "myclock" {
+fg[NORMAL] = "#ffffff"
+}
+class "XfceXfceClockAnalog" style "myclock"
