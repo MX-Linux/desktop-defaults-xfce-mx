@@ -1,6 +1,6 @@
 desktop-defaults-xfce-mx16 (0.3.11) mx; urgency=medium
 
-  * included network_manager_restart.desktop
+  * included network_manager_restart.desktop in /etc/xdg/autostart
 
  -- anticapitalista <antix@operamail.com>  Mon, 31 Oct 2016 14:49:08 +0200
 

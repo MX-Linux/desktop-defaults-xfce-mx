@@ -20,3 +20,4 @@ vertical/*                 	usr/local/share/appdata/panels/vertical
 horizontal/*               	usr/local/share/appdata/panels/horizontal 
 hang-on-shutdown.conf 		etc/modprobe.d
 i915-power-saving.conf 		etc/modprobe.d
+network_manager_restart.desktop 	etc/xdg/autostart
