@@ -54,7 +54,7 @@
       <property name="show-frame" type="bool" value="true"/>
       <property name="names-hidden" type="array">
       </property>
-      <property name="size-max" type="uint" value="18"/>
+      <property name="size-max" type="uint" value="22"/>
     </property>
     <property name="plugin-18" type="string" value="launcher">
       <property name="items" type="array">

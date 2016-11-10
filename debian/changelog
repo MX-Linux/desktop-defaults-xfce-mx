@@ -1,3 +1,11 @@
+desktop-defaults-xfce-mx16 (0.3.12) mx; urgency=medium
+
+  * font size changed to 10.5
+  * notification icon changed from 18 to 22
+  * length of whisker menu changed to 530
+
+ -- anticapitalista <antix@operamail.com>  Sat, 05 Nov 2016 20:24:16 +0200
+
 desktop-defaults-xfce-mx16 (0.3.11) mx; urgency=medium
 
   * included network_manager_restart.desktop in /etc/xdg/autostart
