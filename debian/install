@@ -17,7 +17,7 @@ blueman-start 			usr/local/bin
 fbxkb-start 			usr/local/bin 
 mx/*                       	usr/local/share/mx 
 vertical/*                	usr/local/share/appdata/panels/vertical
-#horizontal/*               	usr/local/share/appdata/panels/horizontal 
+horizontal/*               	usr/local/share/appdata/panels/horizontal 
 hang-on-shutdown.conf 		etc/modprobe.d
 i915-power-saving.conf 		etc/modprobe.d
 synaptic.conf 			root/.synaptic 

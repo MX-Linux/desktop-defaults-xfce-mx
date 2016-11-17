@@ -1,3 +1,17 @@
+desktop-defaults-xfce-mx16 (0.3.14) mx; urgency=medium
+
+  * Put horizontal back in build to avoid errors in mx-installer
+
+ -- anticapitalista <antix@operamail.com>  Thu, 17 Nov 2016 12:13:18 +0200
+
+desktop-defaults-xfce-mx16 (0.3.13) mx; urgency=medium
+
+  * Remove horizontal from build
+  * Whisker menu height increased to 550 since icin theme is bigger
+  * Added synaptic.conf 
+
+ -- anticapitalista <antix@operamail.com>  Tue, 15 Nov 2016 10:53:03 +0200
+
 desktop-defaults-xfce-mx16 (0.3.12) mx; urgency=medium
 
   * font size changed to 10.5

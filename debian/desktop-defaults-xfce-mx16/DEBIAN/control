@@ -1,0 +1,10 @@
+Package: desktop-defaults-xfce-mx16
+Version: 0.3.13
+Architecture: all
+Maintainer: anticapitalista <antiX@operamail.com>
+Installed-Size: 490
+Recommends: lightdm
+Section: system
+Priority: optional
+Homepage: http://antix.mepis.org
+Description: desktop defaults for MX-16 Xfce.
