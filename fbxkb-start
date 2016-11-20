@@ -5,16 +5,43 @@
 
 ## grep for keyboards 
 
-ismulti=$(grep XKBLAYOUT /etc/default/keyboard | grep ,)
+# start fbxkb if multiples present.  any file defining multiples is enough to launch
 
-
-# start fbxkb if present
-
-if [ "$ismulti" = "" ]; then
+#check live system changes
+ismulti1=$(grep XKBLAYOUT /etc/default/keyboard | grep ,)
+if [ "$ismulti1" = "" ]; then
 	echo "only one keyboard"
 	else
 	echo "multiple keyboards found"
 	fbxkb &
+	exit 0
+fi
+
+
+#check xfce keyboard system, if present
+
+if [ "$XDG_CURRENT_DESKTOP" = "XFCE" ]; then
+    if [ "$(grep XkbDisable /home/$USER/.config/xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml |grep false)" = "" ]; then
+        exit 0
+    else
+        ismulti2=$(grep XkbVariant /home/$USER/.config/xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml |grep ,)
+        ismutli3=$(grep XkbLayout /home/$USER/.config/xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml |grep ,)
+    fi
+    if [ "$ismulti2" = "" ]; then
+        echo "only one keyboard"
+    else
+        echo "multiple keyboards found"
+        fbxkb &
+        exit 0
+    fi
+
+    if [ "$ismulti3" = "" ]; then
+        echo "only one keyboard"
+        else
+        echo "multiple keyboards found"
+        fbxkb &
+        exit 0
+    fi
 fi
 
 exit 0
