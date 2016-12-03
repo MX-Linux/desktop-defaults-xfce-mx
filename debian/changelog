@@ -1,3 +1,10 @@
+desktop-defaults-xfce-mx16 (0.3.15) mx; urgency=medium
+
+  * bugfix hang-on-shutdown.conf 
+  * added tumblerdwatcher
+
+ -- anticapitalista <antix@operamail.com>  Fri, 02 Dec 2016 12:30:00 +0200
+
 desktop-defaults-xfce-mx16 (0.3.14) mx; urgency=medium
 
   * Put horizontal back in build to avoid errors in mx-installer

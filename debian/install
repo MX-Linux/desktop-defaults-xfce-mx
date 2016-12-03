@@ -15,6 +15,7 @@ pulse-start                	usr/local/bin
 clock12or24                	usr/local/bin 
 blueman-start 			usr/local/bin 
 fbxkb-start 			usr/local/bin 
+tumblerdwatcher 		usr/local/bin
 mx/*                       	usr/local/share/mx 
 vertical/*                	usr/local/share/appdata/panels/vertical
 horizontal/*               	usr/local/share/appdata/panels/horizontal 
