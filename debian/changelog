@@ -1,3 +1,67 @@
+desktop-defaults-xfce-mx16 (0.3.16) mx; urgency=medium
+
+  * FirefoxDarkThemeOverride.check included to make it default behaviour 
+
+ -- anticapitalista <antix@operamail.com>  Wed, 07 Dec 2016 19:14:45 +0200
+
+desktop-defaults-xfce-mx16 (0.3.15) mx; urgency=medium
+
+  * bugfix hang-on-shutdown.conf
+
+ -- anticapitalista <antix@operamail.com>  Fri, 02 Dec 2016 12:30:00 +0200
+
+desktop-defaults-xfce-mx16 (0.3.14) mx; urgency=medium
+
+  * Put horizontal back in build to avoid errors in mx-installer
+
+ -- anticapitalista <antix@operamail.com>  Thu, 17 Nov 2016 12:13:18 +0200
+
+desktop-defaults-xfce-mx16 (0.3.13) mx; urgency=medium
+
+  * Remove horizontal from build
+  * Whisker menu height increased to 550 since icin theme is bigger
+  * Added synaptic.conf 
+
+ -- anticapitalista <antix@operamail.com>  Tue, 15 Nov 2016 10:53:03 +0200
+
+desktop-defaults-xfce-mx16 (0.3.12) mx; urgency=medium
+
+  * font size changed to 10.5
+  * notification icon changed from 18 to 22
+  * length of whisker menu changed to 530
+
+ -- anticapitalista <antix@operamail.com>  Sat, 05 Nov 2016 20:24:16 +0200
+
+desktop-defaults-xfce-mx16 (0.3.11) mx; urgency=medium
+
+  * included network_manager_restart.desktop in /etc/xdg/autostart
+
+ -- anticapitalista <antix@operamail.com>  Mon, 31 Oct 2016 14:49:08 +0200
+
+desktop-defaults-xfce-mx16 (0.3.10) mx; urgency=medium
+
+  * pulled in orage changes from d_o
+
+ -- anticapitalista <antix@operamail.com>  Fri, 28 Oct 2016 21:23:16 +0300
+
+desktop-defaults-xfce-mx16 (0.3.9) mx; urgency=medium
+
+  * changed width of terminal from 50 t0 80
+
+ -- anticapitalista <antix@operamail.com>  Thu, 27 Oct 2016 22:20:02 +0300
+
+desktop-defaults-xfce-mx16 (0.3.8) mx; urgency=medium
+
+  * Removed help.desktop 
+
+ -- anticapitalista <antix@operamail.com>  Mon, 24 Oct 2016 12:10:22 +0300
+
+desktop-defaults-xfce-mx16 (0.3.7) mx; urgency=medium
+
+  * Java.desktop and Py-Loader.desktop mimetypes added 
+
+ -- anticapitalista <antix@operamail.com>  Fri, 21 Oct 2016 15:19:59 +0300
+
 desktop-defaults-xfce-mx16 (0.3.6+nmu1) mx; urgency=medium
 
   * Renamed to mx16 

@@ -8,7 +8,7 @@
       <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="38"/>
+      <property name="size" type="uint" value="40"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="12"/>
         <value type="int" value="1"/>
@@ -65,7 +65,7 @@
       <property name="show-frame" type="bool" value="true"/>
       <property name="names-hidden" type="array">
       </property>
-      <property name="size-max" type="uint" value="18"/>
+      <property name="size-max" type="uint" value="22"/>
     </property>
     <property name="plugin-8" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
