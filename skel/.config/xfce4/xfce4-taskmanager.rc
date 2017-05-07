@@ -2,7 +2,7 @@
 ShowAllProcesses=FALSE
 MorePrecision=FALSE
 FullCommandLine=FALSE
-ShowStatusIcon=TRUE
+ShowStatusIcon=FALSE
 RefreshRate=750
 ColumnUID=FALSE
 ColumnPID=TRUE
@@ -16,3 +16,4 @@ SortColumn=7
 SortType=1
 WindowWidth=828
 WindowHeight=464
+

@@ -2,7 +2,7 @@
 ShowAllProcesses=FALSE
 MorePrecision=FALSE
 FullCommandLine=FALSE
-ShowStatusIcon=TRUE
+ShowStatusIcon=FALSE
 RefreshRate=750
 ColumnUID=FALSE
 ColumnPID=TRUE
