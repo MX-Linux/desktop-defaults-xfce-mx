@@ -1,8 +1,8 @@
 [StatusIcon]
 stepsize=5
-lmb_slider=false
+lmb_slider=true
 mmb_mute=false
-use_horizontal_slider=false
+use_horizontal_slider=tr
 show_sound_level=false
 onclick=pavucontrol 
 theme=White Gnome
