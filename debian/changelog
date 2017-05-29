@@ -1,3 +1,34 @@
+desktop-defaults-xfce-mx16 (0.3.16.0.12) mx; urgency=medium
+
+  * added orage calender config (no remain in systray)
+  * changed mute action to vertical slider
+
+ -- Steven Pusser <stevep@mxlinux.org>  Sun, 28 May 2017 19:57:45 -0400
+
+desktop-defaults-xfce-mx16 (0.3.16.0.11) mx; urgency=medium
+
+  * Revise icon scheme.
+
+ -- Steven Pusser <stevep@mxlinux.org>  Tue, 09 May 2017 11:16:08 -0700
+
+desktop-defaults-xfce-mx16 (0.3.16.0.10) mx; urgency=medium
+
+  * Revise wallpaper settings.
+
+ -- Steven Pusser <stevep@mxlinux.org>  Sun, 07 May 2017 21:12:43 -0700
+
+desktop-defaults-xfce-mx16 (0.3.16.0.9) mx; urgency=medium
+
+  * Preliminary version for MX 16.1.
+
+ -- Steven Pusser <stevep@mxlinux.org>  Sun, 07 May 2017 18:36:51 -0700
+
+desktop-defaults-xfce-mx16 (0.3.16) mx; urgency=medium
+
+  * Package for MX 16.
+
+ -- Steven Pusser <stevep@mxlinux.org>  Wed, 07 Dec 2016 11:05:37 -0800
+
 desktop-defaults-xfce-mx16 (0.3.16) mx; urgency=medium
 
   * FirefoxDarkThemeOverride.check included to make it default behaviour 
