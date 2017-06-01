@@ -1,3 +1,9 @@
+desktop-defaults-xfce-mx16 (0.3.16.0.13) mx; urgency=medium
+
+  * change to wm title font size 
+
+ -- Steven Pusser <dolphin@mx1>  Wed, 31 May 2017 20:21:35 -0400
+
 desktop-defaults-xfce-mx16 (0.3.16.0.12) mx; urgency=medium
 
   * added orage calender config (no remain in systray)
