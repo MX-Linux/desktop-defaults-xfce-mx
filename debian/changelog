@@ -1,3 +1,9 @@
+desktop-defaults-xfce-mx16 (0.3.16.0.14) mx; urgency=medium
+
+  * hack for ctrl+alt+backspace to kill X
+
+ -- Steven Pusser <dolphin@mx1>  Tue, 20 Jun 2017 21:12:35 -0400
+
 desktop-defaults-xfce-mx16 (0.3.16.0.13) mx; urgency=medium
 
   * change to wm title font size 
