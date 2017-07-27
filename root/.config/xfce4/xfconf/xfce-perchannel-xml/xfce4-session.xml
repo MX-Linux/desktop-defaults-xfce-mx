@@ -26,7 +26,7 @@
     <property name="Engine" type="string" value=""/>
     <property name="engines" type="empty">
       <property name="simple" type="empty">
-        <property name="Font" type="string" value="Droid Sans Bold 10"/>
+        <property name="Font" type="string" value="Liberation Sans Bold 10"/>
         <property name="BgColor" type="string" value="#000000"/>
         <property name="FgColor" type="string" value="#ffffff"/>
         <property name="Image" type="string" value=""/>
