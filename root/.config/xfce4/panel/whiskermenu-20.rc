@@ -32,7 +32,7 @@ command-menueditor=mx-menu-editor
 show-command-menueditor=true
 command-profile=mugshot
 show-command-profile=false
-search-actions=4
+search-actions=5
 
 [action0]
 name=Man Pages
@@ -41,20 +41,22 @@ command=exo-open --launch TerminalEmulator man %s
 regex=false
 
 [action1]
-name=Wikipedia
-pattern=!w
-command=exo-open --launch WebBrowser http://en.wikipedia.org/wiki/%u
+name=Web Search
+pattern=?
+command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
 regex=false
 
 [action2]
+name=Wikipedia
+pattern=!w
+command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
+regex=false
+
+[action3]
 name=Run in Terminal
 pattern=!
 command=exo-open --launch TerminalEmulator %s
 regex=false
 
-[action3]
-name=Open URI
-pattern=^(file|http|https):\\/\\/(.*)$
-command=exo-open \\0
-regex=true
+
 
