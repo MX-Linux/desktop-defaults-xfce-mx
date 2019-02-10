@@ -1,0 +1,17 @@
+# Set QT variables to only pass to gtk2 Xfce environment
+# /etc/X11/Xsession.d/98qtconfig
+#
+BASESTARTUP=$(basename "$STARTUP" | cut -d\  -f1)
+if [ "$BASESTARTUP" = x-session-manager ]; then
+    BASESTARTUP=$(basename $(readlink /etc/alternatives/x-session-manager))
+fi
+case "$BASESTARTUP" in
+  xfce4-session|startxfce4)
+      #set qt environment variables to follow gtk2
+      export QT_QPA_PLATFORMTHEME=gtk2
+      export QT_PLATFORMTHEME=gtk2
+      export QT_PLATFORM_PLUGIN=gtk2
+    ;;
+esac
+
+

@@ -72,6 +72,8 @@
           </And>
           <Filename>nm-connection-editor.desktop</Filename>
           <Filename>system-config-printer.desktop</Filename>
+          <Filename>pavucontrol.desktop</Filename>
+          <Filename>alsamixer.desktop</Filename>
         </Include>
       </Menu>
 
@@ -114,7 +116,6 @@
                 <Filename>software-properties-gtk.desktop</Filename>
                 <Filename>xscreensaver-properties.desktop</Filename>
                 <Filename>xfce-settings-manager.desktop</Filename>
-                <Filename>WindowsButtons.desktop</Filename>
               </Or>
             </Not>
           </And>

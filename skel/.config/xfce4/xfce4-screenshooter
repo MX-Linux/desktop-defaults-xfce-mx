@@ -4,5 +4,5 @@ action=1
 show_mouse=0
 screenshot_dir=file:~/Pictures 
 timestamp=false
-app=mirage
+app=nomacs
 last_user=

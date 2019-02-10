@@ -11,6 +11,7 @@
       <property name="size" type="uint" value="40"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="12"/>
+        <value type="int" value="9"/>
         <value type="int" value="1"/>
         <value type="int" value="8"/>
         <value type="int" value="3"/>
@@ -94,6 +95,23 @@
         <value type="string" value="14459806201.desktop"/>
       </property>
     </property>
+    <property name="plugin-9" type="string" value="actions">
+      <property name="appearance" type="uint" value="0"/>
+       <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-shutdown"/>
+        <value type="string" value="-restart"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+    </property>
+  </property>
     <property name="clipman" type="empty">
       <property name="tweaks" type="empty">
         <property name="never-confirm-history-clear" type="bool" value="false"/>

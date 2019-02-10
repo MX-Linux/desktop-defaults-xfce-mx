@@ -16,8 +16,8 @@ changeto12hour()
 #the first 4 are for the orage clock plugin
 sed -i -r s/data0=%H/data0=%l/ /home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
 sed -i -r s/data0=%H/data0=%l/ /etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
-sed -i -r s/data0=%H/data0=%l/ /usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc
-sed -i -r s/data0=%H/data0=%l/ /usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc
+#sed -i -r s/data0=%H/data0=%l/ /usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc
+#sed -i -r s/data0=%H/data0=%l/ /usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc
 
 #these next 4 lines are for the xfce4-clock plugin
 #sed -i -r s/%H/%l/ /home/demo/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml

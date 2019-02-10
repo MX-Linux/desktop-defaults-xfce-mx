@@ -3,5 +3,5 @@
 <channel name="xfce4-notifyd" version="1.0">
   <property name="notify-location" type="uint" value="2"/>
   <property name="expire-timeout" type="int" value="3"/>
-  <property name="theme" type="string" value="Greybird-mx16-thick-grip"/>
+  <property name="theme" type="string" value="Greybird-mx17"/>
 </channel>

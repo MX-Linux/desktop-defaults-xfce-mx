@@ -1,4 +1,4 @@
-Source: desktop-defaults-xfce-mx16
+Source: desktop-defaults-mx-xfce
 Section: system
 Priority: optional
 Maintainer: dolphinoracle <dolphinoracle@gmail.com>
@@ -6,7 +6,9 @@ Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.4
 Homepage: http://antix.mepis.org
 
-Package: desktop-defaults-xfce-mx16
+Package: desktop-defaults-mx-xfce
 Architecture: all
+Conflicts:  desktop-defaults-xfce-mx17
+Replaces:  desktop-defaults-xfce-mx17
 Recommends: lightdm
-Description: desktop defaults for MX-17 Xfce.
+Description: desktop defaults for MX Linux Xfce.

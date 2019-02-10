@@ -1,0 +1,88 @@
+<action>
+   <icon></icon>
+   <name>Ownership to Root</name>
+   <name xml:lang="am">Ownership to Root</name>
+   <name xml:lang="ca">Propietat a root</name>
+   <name xml:lang="de">Eigentümerschaft zu Root</name>
+   <name xml:lang="el">Ιδιοκτησία στο root</name>
+   <name xml:lang="es">Ajustar Root como Dueño</name>
+   <name xml:lang="fi">Ownership to Root</name>
+   <name xml:lang="fr">Propriété passée à root</name>
+   <name xml:lang="it">Proprietà a Root</name>
+   <name xml:lang="lt">Ownership to Root</name>
+   <name xml:lang="nl">Eigenaarschap naar Root</name>
+   <name xml:lang="pt_BR">Mudar para administrador (Root)</name>
+   <name xml:lang="pt">Mudar para administrador (Root)</name>
+   <name xml:lang="ru">Передать права Root</name>
+   <name xml:lang="sv">Ägarskap till Root</name>
+   <name xml:lang="zh_TW">將檔案設為 root 所擁有</name>
+   <unique-id>1388696949105908-1</unique-id>
+   <command>gnome-keyring-daemon -r -d;gksu &quot;chown -R root:root %F&quot;</command>
+   <description>Change to administrative permissions </description>
+   <description xml:lang="am">Change to administrative permissions</description>
+   <description xml:lang="ca">Canvia a permisos d'administrador</description>
+   <description xml:lang="de">Auf administrative Berechtigungen ändern</description>
+   <description xml:lang="el">Αλλαγή στα δικαιώματα διαχειριστή</description>
+   <description xml:lang="es">Cambiar a permisos como Administrador</description>
+   <description xml:lang="fi">Change to administrative permissions</description>
+   <description xml:lang="fr">Passer en privilèges administrateurs</description>
+   <description xml:lang="it">Modifica i permessi a favore dell'amministratore</description>
+   <description xml:lang="lt">Change to administrative permissions</description>
+   <description xml:lang="nl">Verander naar administratieve permissies</description>
+   <description xml:lang="pt_BR">Muda para permissões de administrador</description>
+   <description xml:lang="pt">Muda para permissões de administrador</description>
+   <description xml:lang="ru">Изменение административных разрешений</description>
+   <description xml:lang="sv">Byt till administrativa rättigheter</description>
+   <description xml:lang="zh_TW">將檔案存取權轉移給系統管理員</description>
+   <patterns>*</patterns>
+   <directories/>
+   <audio-files/>
+   <image-files/>
+   <other-files/>
+   <text-files/>
+   <video-files/>
+</action>
+<action>
+   <icon></icon>
+   <name>Ownership to user</name>
+   <name xml:lang="am">Ownership to user</name>
+   <name xml:lang="ca">Propietat a usuari</name>
+   <name xml:lang="de">Eigentümerschaft zum Benutzer</name>
+   <name xml:lang="el">Ιδιοκτησία προς τον χρήστη</name>
+   <name xml:lang="es">Ajustar usuario como Dueño</name>
+   <name xml:lang="fi">Ownership to user</name>
+   <name xml:lang="fr">Propriété passée à l'utilisateur</name>
+   <name xml:lang="it">Proprietà all'utente</name>
+   <name xml:lang="lt">Ownership to user</name>
+   <name xml:lang="nl">Eigenaarschap naar gebruiker</name>
+   <name xml:lang="pt_BR">Mudar para utilizador normal</name>
+   <name xml:lang="pt">Mudar para utilizador normal</name>
+   <name xml:lang="ru">Передать права пользователю</name>
+   <name xml:lang="sv">Ägarskap till användare</name>
+   <name xml:lang="zh_TW">將檔案設為使用者所擁有</name>
+   <unique-id>1388702559256309-5</unique-id>
+   <command>gnome-keyring-daemon -r -d;gksu &quot;chown -R $USER:$USER %F&quot;</command>
+   <description>Removes use restrictions</description>
+   <description xml:lang="am">Removes use restrictions</description>
+   <description xml:lang="ca">Elimina restriccions d'ús</description>
+   <description xml:lang="de">Entfernt Beschränkungen der Nutzung</description>
+   <description xml:lang="el">Καταργεί τους περιορισμούς χρήσης</description>
+   <description xml:lang="es">Remover restricciones de uso</description>
+   <description xml:lang="fi">Removes use restrictions</description>
+   <description xml:lang="fr">Lever les restrictions d'utilisation</description>
+   <description xml:lang="it">Rimuove le restrizioni verso l'utente</description>
+   <description xml:lang="lt">Pašalina naudojimo apribojimus</description>
+   <description xml:lang="nl">Verwijdert gebruikersrestricties</description>
+   <description xml:lang="pt_BR">Remove as restrições de utilização</description>
+   <description xml:lang="pt">Remove as restrições de utilização</description>
+   <description xml:lang="ru">Удаление ограничений использования</description>
+   <description xml:lang="sv">Tar bort restriktioner för användandet</description>
+   <description xml:lang="zh_TW">移除存取限制</description>
+   <patterns>*</patterns>
+   <directories/>
+   <audio-files/>
+   <image-files/>
+   <other-files/>
+   <text-files/>
+   <video-files/>
+</action>

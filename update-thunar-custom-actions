@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#localize Thunar custom actions for available translations
+
+#Pull locale info from F2 Live Boot Menu Setup
+
+#LNG=$(cat /etc/default/locale|grep LANG|cut -d_ -f1|cut -d= -f2)
+#echo $LNG
+
+#this script can be run to bring updated uca.xml files into the user's home folder in the event of a system update
+#this script will affect all user's Thunar configurations
+
+
+
+
+localize_thunar_custom_actions()
+{
+#backup exisitng uca.xml file and copy new uca.xml file into appropriate location
+  cp /home/$USER/.config/Thunar/uca.xml /home/$USER/.config/Thunar/uca.xml.$(date +%Y%m%H%M%S)
+  cp /etc/skel/.config/Thunar/uca.xml /home/$USER/.config/Thunar/uca.xml
+
+}
+
+#look for a check file and if present exit, otherwise create check file and then parse language
+
+
+main()
+{
+
+echo "localizing thunar custom actions"
+
+localize_thunar_custom_actions
+}
+
+main
