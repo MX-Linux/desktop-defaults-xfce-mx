@@ -2,7 +2,6 @@ skel/.[a-zA-Z]* 		etc/skel
 root/.[a-zA-Z]*            	root
 Printers-(CUPS).desktop    	usr/share/applications
 gtk-2.0/*                  	etc/gtk-2.0
-pulse-start                	usr/local/bin 
 clock12or24                	usr/local/bin 
 tumblerd-monitor			usr/local/bin
 blueman-start 			usr/local/bin 
