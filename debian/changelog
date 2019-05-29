@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (19.06.01) mx; urgency=medium
+
+  * bump version numbering 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 28 May 2019 20:40:06 -0400
+
 desktop-defaults-mx-xfce (19.02.01) mx; urgency=medium
 
   * initial build
