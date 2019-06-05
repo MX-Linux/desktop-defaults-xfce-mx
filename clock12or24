@@ -13,9 +13,9 @@ LNG=$(cat /etc/default/locale|grep LANG)
 
 changeto12hour()
 {
-#the first 4 are for the orage clock plugin
-sed -i -r s/data0=%H/data0=%l/ /home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
-sed -i -r s/data0=%H/data0=%l/ /etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
+#the first 4 are for the datetime clock plugin
+sed -i -r s/%H/%l/ /home/demo/.config/xfce4/panel/datetime-1.rc
+sed -i -r s/%H/%l/ /etc/skel/.config/xfce4/panel/datetime-1.rc
 #sed -i -r s/data0=%H/data0=%l/ /usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc
 #sed -i -r s/data0=%H/data0=%l/ /usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc
 
