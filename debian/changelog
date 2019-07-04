@@ -1,3 +1,21 @@
+desktop-defaults-mx-xfce (19.07.01) mx; urgency=medium
+
+  * change up panel, remove seperators 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 04 Jul 2019 09:10:26 -0400
+
+desktop-defaults-mx-xfce (19.06.04) mx; urgency=medium
+
+  * update edit-as-root and root-thunar actions 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 29 Jun 2019 22:34:46 -0400
+
+desktop-defaults-mx-xfce (19.06.03) mx; urgency=medium
+
+  * update theme to Arc-Dark 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 08 Jun 2019 11:47:51 -0400
+
 desktop-defaults-mx-xfce (19.06.02) mx; urgency=medium
 
   * revised to deal with datetime as default clock 

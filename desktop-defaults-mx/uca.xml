@@ -118,7 +118,7 @@
    <name xml:lang="sv">Öppna root Thunar här</name>
    <name xml:lang="zh_TW">在此處以 root 身份開啟 Thunar 視窗</name>
    <unique-id>1391443434179984-1</unique-id>
-   <command>gnome-keyring-daemon -r -d;gksu thunar %f</command>
+   <command>mx-pkexec thunar %f</command>
    <description>Open this folder with administrative rights</description>
    <description xml:lang="am">Open this folder with administrative rights</description>
    <description xml:lang="ca">Obre aquesta carpeta amb drets d'administrador</description>
@@ -168,7 +168,7 @@
    <name xml:lang="sv">Redigera som Root</name>
    <name xml:lang="zh_TW">以 root 身份編輯</name>
    <unique-id>1389150009142611-4</unique-id>
-   <command>gnome-keyring-daemon -r -d;/usr/bin/mx-edit-as-root.sh %f;</command>
+   <command>/usr/bin/mx-edit-as-root.sh %f;</command>
    <description>Make administrative changes to text files</description>
    <description xml:lang="am">Make administrative changes to text files</description>
    <description xml:lang="ca">Fa canvis d'administració a fitxers de text</description>
