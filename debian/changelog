@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (19.07.02) mx; urgency=medium
+
+  * show systray frame & use greybird 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 05 Jul 2019 08:19:14 -0400
+
 desktop-defaults-mx-xfce (19.07.01) mx; urgency=medium
 
   * change up panel, remove seperators 

@@ -16,9 +16,9 @@
         <value type="int" value="15"/>
         <value type="int" value="14"/>
         <value type="int" value="7"/>
-        <value type="int" value="4"/>
         <value type="int" value="5"/>
         <value type="int" value="6"/>
+        <value type="int" value="4"/>
         <value type="int" value="20"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
@@ -59,7 +59,7 @@
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="fbxkb"/>
       </property>
-      <property name="show-frame" type="bool" value="false"/>
+      <property name="show-frame" type="bool" value="true"/>
       <property name="names-hidden" type="array">
       </property>
       <property name="size-max" type="uint" value="24"/>
