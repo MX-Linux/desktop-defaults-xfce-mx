@@ -13,3 +13,4 @@ desktop-defaults-mx/*                       usr/share/desktop-defaults-mx
 56xfce4-qtconfig              etc/X11/Xsession.d
 kbd.sh                     	usr/local/bin
 default_wallpaper/*     usr/share/backgrounds
+skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml etc/xdg/xfce4/xfconf/xfce-perchannel-xml

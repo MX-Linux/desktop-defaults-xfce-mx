@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (19.07.03) mx; urgency=medium
+
+  * add keyboard shortcuts to /etc/xdg/xfce4 so reset default function works 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 09 Jul 2019 21:37:50 -0400
+
 desktop-defaults-mx-xfce (19.07.02) mx; urgency=medium
 
   * show systray frame & use greybird 
