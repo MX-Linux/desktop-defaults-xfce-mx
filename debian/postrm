@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#DEBHELPER#
+
+# postrm script for desktop-defaults-mx-xfce
+
+#set -e
+
+case "$1" in
+  install|upgrade) dpkg-divert --quiet                                               \
+                            --remove                                              \
+                            --package desktop-defaults-mx-xfce         \
+                            --rename       \
+                            --divert /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.dpkg-distrib \
+                            /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+                ;;
+
+                *) :
+                   ;;
+esac 
+
+exit 0
