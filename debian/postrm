@@ -10,7 +10,7 @@ case "$1" in
   install|upgrade) dpkg-divert --quiet                                               \
                             --remove                                              \
                             --package desktop-defaults-mx-xfce         \
-                            --rename       \
+                            --rename \
                             --divert /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.dpkg-distrib \
                             /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
                 ;;

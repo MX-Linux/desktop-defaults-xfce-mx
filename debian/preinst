@@ -7,10 +7,13 @@
 #set -e
 
 case "$1" in
-  install|upgrade) dpkg-divert --quiet                                               \
+  install|upgrade)  if [ -e /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.dpkg-distrib ]; then
+						rm /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.dpkg-distrib
+					fi
+					dpkg-divert --quiet                                               \
                             --add                                              \
                             --package desktop-defaults-mx-xfce         \
-                            --rename       \
+                            --rename \
                             --divert /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.dpkg-distrib \
                             /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
                 ;;
