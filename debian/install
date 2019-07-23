@@ -5,7 +5,7 @@ gtk-2.0/*                  	etc/gtk-2.0
 clock12or24                	usr/local/bin 
 tumblerd-monitor			usr/local/bin
 blueman-start 			usr/local/bin 
-fbxkb-start 			usr/localbin 
+fbxkb-start 			usr/local/bin 
 mx-edit-as-root.sh		usr/bin
 desktop-defaults-mx/*                       usr/share/desktop-defaults-mx
 56xfce4-qtconfig              etc/X11/Xsession.d
