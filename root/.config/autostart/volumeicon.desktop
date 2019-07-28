@@ -2,11 +2,12 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=Volume
-Comment=Control volume
-Exec=/usr/bin/volumeicon
+Name=volumeicon
+Comment=
+Exec=volumeicon
 OnlyShowIn=XFCE;
+RunHook=0
 StartupNotify=false
 Terminal=false
-Hidden=true
+Hidden=false
 

@@ -16,7 +16,6 @@
         <value type="int" value="15"/>
         <value type="int" value="14"/>
         <value type="int" value="7"/>
-        <value type="int" value="5"/>
         <value type="int" value="6"/>
         <value type="int" value="4"/>
         <value type="int" value="20"/>
@@ -98,9 +97,6 @@
         <value type="string" value="+logout"/>
         <value type="string" value="-logout-dialog"/>
       </property>
-    </property>
-    <property name="plugin-5" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
   </property>
   <property name="clipman" type="empty">
