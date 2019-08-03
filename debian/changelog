@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (19.07.07) mx; urgency=medium
+
+  * update screensaver settings
+  * update qt scaling settings (fehlix) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 02 Aug 2019 20:04:48 -0400
+
 desktop-defaults-mx-xfce (19.07.06) mx; urgency=medium
 
   * add screensaver settings 

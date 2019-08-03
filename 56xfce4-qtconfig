@@ -1,5 +1,5 @@
 # Set QT variables to only pass to gtk2 Xfce environment
-# /etc/X11/Xsession.d/98qtconfig
+# /etc/X11/Xsession.d/56xfce4-qtconfig
 #
 BASESTARTUP=$(basename "$STARTUP" | cut -d\  -f1)
 if [ "$BASESTARTUP" = x-session-manager ]; then
@@ -11,7 +11,9 @@ case "$BASESTARTUP" in
       export QT_QPA_PLATFORMTHEME=gtk2
       export QT_PLATFORMTHEME=gtk2
       export QT_PLATFORM_PLUGIN=gtk2
-    ;;
+      if command -v xfconf-query >/dev/null; then
+         export QT_SCALE_FACTOR=$(xfconf-query -c xsettings -p /Gdk/WindowScalingFactor 2>/dev/null)
+         [ -z "${QT_SCALE_FACTOR}" ] && unset QT_SCALE_FACTOR
+      fi
+      ;;
 esac
-
-
