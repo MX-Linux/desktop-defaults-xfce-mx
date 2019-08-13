@@ -41,6 +41,19 @@ else
     # no content changes found so we can remove 
     rm /etc/X11/Xsession.d/98qtconfig
 fi
+ 
+##remove old diversion on keyboard-shortcuts
+	if [ -e /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml.dpkg-distrib ]; then
+		rm /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+	fi
+	
+	if [ -n "$(dpkg-divert --list |grep desktop-defaults-mx-xfce)" ]; then
+		dpkg-divert --quiet                                               \
+	                               --remove                                                 \
+	                               --package desktop-defaults-mx-xfce     \
+	                               --rename \
+	                               /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml 2>/dev/null
+	fi
 
 
 exit 0
