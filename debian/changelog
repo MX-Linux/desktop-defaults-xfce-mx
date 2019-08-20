@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (19.08.02) mx; urgency=medium
+
+  * remove hybrid sleep from xfce4-session-logout menu 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 19 Aug 2019 20:49:06 -0400
+
 desktop-defaults-mx-xfce (19.08.01) mx; urgency=medium
 
   * remove divert on keyboard shortcuts 

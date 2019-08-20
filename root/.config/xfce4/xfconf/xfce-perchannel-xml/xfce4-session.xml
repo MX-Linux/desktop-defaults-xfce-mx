@@ -35,5 +35,6 @@
   </property>
   <property name="shutdown" type="empty">
     <property name="ShowHibernate" type="bool" value="false"/>
+    <property name="ShowHybridSleep" type="bool" value="false"/>
   </property>
 </channel>
