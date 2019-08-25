@@ -1,0 +1,13 @@
+[Desktop Entry]
+GenericName=Keyboard Layouts
+Name=Keyboard Layouts
+Comment=Configures keyboard options and layouts.
+Comment[ru]=Настройка раскладок и опций клавиатуры.
+Exec=gksu fskbsetting
+Icon=im-chooser
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Settings;DesktopSettings;
+NoDisplay=true

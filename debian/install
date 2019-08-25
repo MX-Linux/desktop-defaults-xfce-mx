@@ -10,4 +10,4 @@ mx-edit-as-root.sh		usr/bin
 desktop-defaults-mx/*                       usr/share/desktop-defaults-mx
 56xfce4-qtconfig              etc/X11/Xsession.d
 kbd.sh                     	usr/local/bin
-default_wallpaper/*     usr/share/backgrounds
+#default_wallpaper/*     usr/share/backgrounds
