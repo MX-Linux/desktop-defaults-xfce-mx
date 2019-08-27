@@ -19,6 +19,7 @@
    <name xml:lang="pt">Executar comando ...</name>
    <name xml:lang="ru">Выполнить команду ...</name>
    <name xml:lang="sk">Spustiť príkaz ...</name>
+   <name xml:lang="sl">Run command ...</name>
    <name xml:lang="sv">Kör kommando ...</name>
    <name xml:lang="zh_TW">執行某命令……</name>
    <unique-id>1391443541044100-3</unique-id>
@@ -40,6 +41,7 @@
    <description xml:lang="pt">Abre um programa</description>
    <description xml:lang="ru">Запуск программы</description>
    <description xml:lang="sk">Spustiť program</description>
+   <description xml:lang="sl">Launch a program</description>
    <description xml:lang="sv">Starta ett program</description>
    <description xml:lang="zh_TW">啟動某項程式</description>
    <patterns>*</patterns>
@@ -69,6 +71,7 @@
    <name xml:lang="pt">Abrir Terminal aqui</name>
    <name xml:lang="ru">Открыть терминал здесь</name>
    <name xml:lang="sk">Otvoriť Terminál tu</name>
+   <name xml:lang="sl">Tukaj odprite termnal</name>
    <name xml:lang="sv">Öppna Terminal här</name>
    <name xml:lang="zh_TW">在此處開啟終端機</name>
    <unique-id>1388590880939619-1</unique-id>
@@ -90,6 +93,7 @@
    <description xml:lang="pt">Abre um emulador de terminal aqui</description>
    <description xml:lang="ru">Запуск эмулятора терминала здесь</description>
    <description xml:lang="sk">Spustiť emulátor terminálu v tomto umiestnení</description>
+   <description xml:lang="sl">Launch terminal emulator here</description>
    <description xml:lang="sv">Starta Terminalemulator här</description>
    <description xml:lang="zh_TW">在此處啟動終端機模擬程式</description>
    <patterns>*</patterns>
@@ -115,6 +119,7 @@
    <name xml:lang="pt">Abrir Thunar de raíz aqui</name>
    <name xml:lang="ru">Открыть папку от root</name>
    <name xml:lang="sk">Open root Thunar here</name>
+   <name xml:lang="sl">Tukaj odprite korenski oz. root Thunar</name>
    <name xml:lang="sv">Öppna root Thunar här</name>
    <name xml:lang="zh_TW">在此處以 root 身份開啟 Thunar 視窗</name>
    <unique-id>1391443434179984-1</unique-id>
@@ -136,6 +141,7 @@
    <description xml:lang="pt">Abre esta pasta com permissões de administrador</description>
    <description xml:lang="ru">Открытие папки с правами администратора</description>
    <description xml:lang="sk">Open this folder with administrative rights</description>
+   <description xml:lang="sl">Odprite ta imenik s skrbniškimi pravicami</description>
    <description xml:lang="sv">Öppna denna mapp med administrativa rättigheter</description>
    <description xml:lang="zh_TW">以系統管理員的權限開啟本資料夾</description>
    <patterns>*</patterns>
@@ -165,6 +171,7 @@
    <name xml:lang="pt">Editar como administrador (Root)</name>
    <name xml:lang="ru">Редактировать от Root</name>
    <name xml:lang="sk">Edit as Root</name>
+   <name xml:lang="sl">Edit as Root</name>
    <name xml:lang="sv">Redigera som Root</name>
    <name xml:lang="zh_TW">以 root 身份編輯</name>
    <unique-id>1389150009142611-4</unique-id>
@@ -186,6 +193,7 @@
    <description xml:lang="pt">Permite fazer alterações administrativas a ficheiros de texto</description>
    <description xml:lang="ru">Внесение изменений в текстовые файлы</description>
    <description xml:lang="sk">Make administrative changes to text files</description>
+   <description xml:lang="sl">Make administrative changes to text files</description>
    <description xml:lang="sv">Gör administrativa ändringar i textfiler</description>
    <description xml:lang="zh_TW">以系統管理員身份編輯文字檔</description>
    <patterns>*</patterns>
@@ -206,11 +214,12 @@
    <name xml:lang="it">Trova file qui</name>
    <name xml:lang="lt">Rasti čia failus</name>
    <name xml:lang="nl">Vind bestanden hier</name>
-   <name xml:lang="pl">Znajdź tutaj pliki</name>
+   <name xml:lang="pl">Szukaj tutaj plików</name>
    <name xml:lang="pt_BR">Procurar ficheiros aqui</name>
    <name xml:lang="pt">Procurar ficheiros aqui</name>
    <name xml:lang="ru">Найти файлы здесь</name>
    <name xml:lang="sk">Find files here</name>
+   <name xml:lang="sl">Find files here</name>
    <name xml:lang="sv">Hitta filer här</name>
    <name xml:lang="zh_TW">尋找這裡面的檔案</name>
    <unique-id>1391015829778456-1</unique-id>
@@ -232,6 +241,7 @@
    <description xml:lang="pt">Pesquisa na pasta em uso</description>
    <description xml:lang="ru">Поиск в текущей папке</description>
    <description xml:lang="sk">Search current folder</description>
+   <description xml:lang="sl">Search current folder</description>
    <description xml:lang="sv">Sök i aktuell mapp</description>
    <description xml:lang="zh_TW">在本資料夾中搜尋</description>
    <patterns>*</patterns>
@@ -258,6 +268,7 @@
    <name xml:lang="pt">Criar atalho (symlink)</name>
    <name xml:lang="ru">Создать символьную ссылку</name>
    <name xml:lang="sk">Create symlink</name>
+   <name xml:lang="sl">Create symlink</name>
    <name xml:lang="sv">Skapa symbolisk länk</name>
    <name xml:lang="zh_TW">創造符號連結</name>
    <command>bash -c &apos;F=&quot;$1&quot;; N=&quot;$2&quot;;  P=$(readlink -f &quot;$PWD&quot;); R=$(readlink -f &quot;$F&quot;); [ &quot;$P&quot; = &quot;$R&quot; ] &amp;&amp; exit; ln -s &quot;$F&quot; &quot;$N (symlink)&quot;&apos; - %f %n</command>
@@ -278,6 +289,7 @@
    <description xml:lang="pt">Cria um atalho entre dois ficheiros ou directórios</description>
    <description xml:lang="ru">Ссылка между двумя файлами или директориями</description>
    <description xml:lang="sk">Softlink between two files or directories</description>
+   <description xml:lang="sl">Softlink between two files or directories</description>
    <description xml:lang="sv">Symbolisk länk mellan två filer eller kataloger</description>
    <description xml:lang="zh_TW">在兩個檔案或目錄之間建立軟連結</description>
    <patterns>*</patterns>
@@ -306,6 +318,7 @@
    <name xml:lang="pt">Partilhar uma pasta na rede</name>
    <name xml:lang="ru">Сделать папку общей в вашей сети</name>
    <name xml:lang="sk">Share a folder on your network</name>
+   <name xml:lang="sl">Deli mapo za skupno rabo v omrežju</name>
    <name xml:lang="sv">Dela en mapp på ditt nätverk</name>
    <name xml:lang="zh_TW">把資料夾分享到網路上</name>
    <command>gnome-keyring-daemon -r -d;gksu system-config-samba %d</command>
@@ -326,6 +339,7 @@
    <description xml:lang="pt">Configurar a partilha de ficheiros</description>
    <description xml:lang="ru">Настройка совместного использования файлов</description>
    <description xml:lang="sk">Configure file sharing</description>
+   <description xml:lang="sl">Konfiguriraj skupno rabo datotek</description>
    <description xml:lang="sv">Konfigurera fildelning</description>
    <description xml:lang="zh_TW">設定檔案分享</description>
    <patterns>*</patterns>
@@ -351,6 +365,7 @@
    <name xml:lang="pt">Computar a sha/md5sum</name>
    <name xml:lang="ru">Посчитать sha/md5sum</name>
    <name xml:lang="sk">Compute sha/md5sum</name>
+   <name xml:lang="sl">Compute sha/md5sum</name>
    <name xml:lang="sv">Beräkna sha/md5sum</name>
    <name xml:lang="zh_TW">計算 sha/md5sum</name>
    <command>yad --info --title=&quot;Computed checksums for %n&quot; --text=&quot;$(echo; echo -n &apos;md5:     &apos; `md5sum %n | awk &apos;{print $1}&apos;`; echo; echo &apos;sha256:&apos; `sha256sum %n | awk &apos;{print $1}&apos;`)&quot; --height=280 --center --button=gtk-close | yad --width=350 --height=250 --progress --percentage=&quot;50&quot; --auto-kill --auto-close --title=&quot;Checksum utility&quot; --text=&quot;Calculating checksums for %n&quot;  --center --button=gtk-close</command>
@@ -371,6 +386,7 @@
    <description xml:lang="pt">Exibe a soma de controlo (checksum) da ISO</description>
    <description xml:lang="ru">Показ контрольной суммы ISO</description>
    <description xml:lang="sk">Display checksum of ISO</description>
+   <description xml:lang="sl">Display checksum of ISO</description>
    <description xml:lang="sv">Visa checksum för ISO</description>
    <description xml:lang="zh_TW">顯示 ISO 檔的檢查碼</description>
    <patterns>*.iso;*.ISO</patterns>
@@ -396,6 +412,7 @@
    <name xml:lang="pt">Verificar a integridade dos dados</name>
    <name xml:lang="ru">Проверка целостности данных</name>
    <name xml:lang="sk">Check data integrity</name>
+   <name xml:lang="sl">Check data integrity</name>
    <name xml:lang="sv">Kontrollera dataintegritet</name>
    <name xml:lang="zh_TW">檢查資料完整性</name>
    <command>hashType=&quot;$(echo %n | awk -F &quot;.&quot; &apos;{print $NF}&apos; | sed s/sum//)&quot; &amp;&amp; yad --info --title=&quot;$hashType&quot;&quot; sum result&quot; --width=400 --height=200 --center --text=&quot;\n    $(&quot;$hashType&quot;sum -c %f)&quot;&quot;\n&quot; --button=gtk-close  | yad --progress  --percentage=&quot;50&quot; --auto-kill --auto-close --center --title=&quot;Checksum utility&quot; --text=&quot;    Checking &quot;&quot;$hashType&quot;&quot; sum of    \n&quot;&quot;    &quot;&quot;$(echo %n | rev | cut -f2- -d. | rev)&quot;&quot;    &quot;</command>
@@ -416,6 +433,7 @@
    <description xml:lang="pt">Calcula a hash da ISO e compara-a com a hash constante no ficheiro md5/sha</description>
    <description xml:lang="ru">Сравнение файлов ISO и hash</description>
    <description xml:lang="sk">Compare ISO and hash files</description>
+   <description xml:lang="sl">Compare ISO and hash files</description>
    <description xml:lang="sv">Jämför ISO och hash-filer</description>
    <description xml:lang="zh_TW">比對 ISO 檔和 hash 檔案</description>
    <patterns>*.md5;*.md5sum;*.sha;*.shasum;*.sha1;*.sha1sum;*.sha224;*.sha224sum;*.sha256;*.sha256sum;*.sha384;*.sha384sum;*.sha512;*.sha512sum</patterns>
@@ -441,6 +459,7 @@
    <name xml:lang="pt">Reproduzir Som de Iniciação</name>
    <name xml:lang="ru">Создать звук при входе</name>
    <name xml:lang="sk">Make Startup Sound</name>
+   <name xml:lang="sl">Make Startup Sound</name>
    <name xml:lang="sv">Gör ett ljud vid Start</name>
    <name xml:lang="zh_TW">設為啟動音效</name>
    <unique-id>1447629663342880-3</unique-id>
@@ -462,6 +481,7 @@
    <description xml:lang="pt">Reproduz o Som de Iniciação seleccionado</description>
    <description xml:lang="ru">Назначение выбранного звука для входа</description>
    <description xml:lang="sk">Make selected Startup Sound</description>
+   <description xml:lang="sl">Make selected Startup Sound</description>
    <description xml:lang="sv">Gör utvalt Startljud</description>
    <description xml:lang="zh_TW">將目前選擇的檔案設為啟動音效</description>
    <patterns>*</patterns>
@@ -486,6 +506,7 @@
    <name xml:lang="pt">Reproduzir Som de Saída</name>
    <name xml:lang="ru">Создать звук при выходе</name>
    <name xml:lang="sk">Make Logout Sound</name>
+   <name xml:lang="sl">Make Logout Sound</name>
    <name xml:lang="sv">Gör ett ljud vid Utloggning</name>
    <name xml:lang="zh_TW">設為登出音效</name>
    <unique-id>1447629663342880-4</unique-id>
@@ -507,6 +528,7 @@
    <description xml:lang="pt">Reproduz o Som de Saída seleccionado</description>
    <description xml:lang="ru">Назначение выбранного звука для выхода</description>
    <description xml:lang="sk">Make selected Logout Sound</description>
+   <description xml:lang="sl">Make selected Logout Sound</description>
    <description xml:lang="sv">Gör utvalt Logout ljud</description>
    <description xml:lang="zh_TW">將目前選擇的檔案設為登出音效</description>
    <patterns>*</patterns>
@@ -529,8 +551,9 @@
    <name xml:lang="pl">Zainstaluj pliki Deb</name>
    <name xml:lang="pt_BR">Install Deb Files</name>
    <name xml:lang="pt">Instalar Ficheiros Deb</name>
-   <name xml:lang="ru">Install Deb Files</name>
+   <name xml:lang="ru">Установить Deb файлы</name>
    <name xml:lang="sk">Install Deb Files</name>
+   <name xml:lang="sl">Install Deb Files</name>
    <name xml:lang="sv">Installera Deb Filer</name>
    <name xml:lang="zh_TW">Install Deb Files</name>
     <unique-id>1520126333907393-1</unique-id>
@@ -550,8 +573,9 @@
    <description xml:lang="pl">Zainstaluj pakiety Debiana i zależności korzystając z apt</description>
    <description xml:lang="pt_BR">Install deb packages and dependencies with apt</description>
    <description xml:lang="pt">Instalar pacotes deb e respectivas dependências através do apt</description>
-   <description xml:lang="ru">Install deb packages and dependencies with apt</description>
+   <description xml:lang="ru">Установить deb пакеты и зависимости с помощью apt</description>
    <description xml:lang="sk">Install deb packages and dependencies with apt</description>
+   <description xml:lang="sl">Install deb packages and dependencies with apt</description>
    <description xml:lang="sv">Installera deb paket och beroenden med apt</description>
    <description xml:lang="zh_TW">Install deb packages and dependencies with apt</description>
    <patterns>*.deb</patterns>
