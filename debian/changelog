@@ -1,3 +1,11 @@
+desktop-defaults-mx-xfce (19.08.03) mx; urgency=medium
+
+  * translations update
+  * enable lock by default via xfce4-screensaver
+  * disable frame to aid panel corruption issues 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 28 Aug 2019 19:52:16 -0400
+
 desktop-defaults-mx-xfce (19.08.02) mx; urgency=medium
 
   * remove hybrid sleep from xfce4-session-logout menu 
