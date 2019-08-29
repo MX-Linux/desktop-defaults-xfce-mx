@@ -11,3 +11,5 @@ desktop-defaults-mx/*                       usr/share/desktop-defaults-mx
 56xfce4-qtconfig              etc/X11/Xsession.d
 kbd.sh                     	usr/local/bin
 #default_wallpaper/*     usr/share/backgrounds
+bin/*	usr/bin
+thumbnailers/*			usr/share/thumbnailers
