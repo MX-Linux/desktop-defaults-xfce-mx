@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (19.08.04) mx; urgency=medium
+
+  * revise switch user function in whisker menu
+  * added xfce4-find-cursor to shortcuts (cntl+alt+m) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 31 Aug 2019 16:31:49 -0400
+
 desktop-defaults-mx-xfce (19.08.03) mx; urgency=medium
 
   * translations update
