@@ -1,15 +1,11 @@
-skel/.[a-zA-Z]* 		etc/skel
-root/.[a-zA-Z]*            	root
+dd-mx-xfce-system/skel/.[a-zA-Z]* 		etc/skel
+dd-mx-xfce-system/root/.[a-zA-Z]*            	root
 Printers-(CUPS).desktop    	usr/share/applications
-gtk-2.0/*                  	etc/gtk-2.0
 clock12or24                	usr/local/bin 
 tumblerd-monitor			usr/local/bin
 blueman-start 			usr/local/bin 
 fbxkb-start 			usr/local/bin 
-mx-edit-as-root.sh		usr/bin
-desktop-defaults-mx/*                       usr/share/desktop-defaults-mx
 56xfce4-qtconfig              etc/X11/Xsession.d
 kbd.sh                     	usr/local/bin
-#default_wallpaper/*     usr/share/backgrounds
 bin/*	usr/bin
 thumbnailers/*			usr/share/thumbnailers

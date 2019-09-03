@@ -1,0 +1,27 @@
+#! /bin/sh
+
+set -e
+
+if [ -e /etc/skel/.config/Thunar/uca.xml ]; then
+    rm /etc/skel/.config/Thunar/uca.xml
+fi
+
+if [ -d /etc/skel/.config/Thunar ]; then
+    cp /usr/share/desktop-defaults-mx/uca.xml /etc/skel/.config/Thunar/uca.xml
+else
+    mkdir -p /etc/skel/.config/Thunar
+    cp /usr/share/desktop-defaults-mx/uca.xml /etc/skel/.config/Thunar/uca.xml
+fi
+
+if [ -e /root/.config/Thunar/uca.xml ]; then
+    rm /root/.config/Thunar/uca.xml
+fi
+
+if [ -d /root/.config/Thunar ]; then
+    cp /usr/share/desktop-defaults-mx/uca.xml /root/.config/Thunar/uca.xml
+else
+    mkdir -p /root/.config/Thunar
+    cp /usr/share/desktop-defaults-mx/uca.xml /root/.config/Thunar/uca.xml  
+fi
+
+exit 0

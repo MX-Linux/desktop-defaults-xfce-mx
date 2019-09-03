@@ -10,5 +10,18 @@ Package: desktop-defaults-mx-xfce
 Architecture: all
 Conflicts:  desktop-defaults-xfce-mx17
 Replaces:  desktop-defaults-xfce-mx17
+Depends:  desktop-defaults-mx-xfce-desktop, desktop-defaults-mx-xfce-system
 Recommends: lightdm
-Description: desktop defaults for MX Linux Xfce.
+Description: Metapackage for desktop defaults for MX Linux Xfce.
+
+Package:  desktop-defaults-mx-xfce-system
+Architecture:  all
+Conflicts:  desktop-defaults-xfce-mx17
+Replaces:  desktop-defaults-mx-xfce
+Description:  xfce system defaults for MX
+
+Package:  desktop-defaults-mx-xfce-desktop
+Architecture:  all
+Conflicts:  desktop-defaults-xfce-mx17
+Replaces:  desktop-defaults-mx-xfce
+Description:  xfce desktop defaults for MX

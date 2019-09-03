@@ -1,1 +1,1 @@
-# desktop-defaults-xfce-mx17
+# desktop-defaults-xfce-mx
