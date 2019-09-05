@@ -3,3 +3,4 @@ dd-mx-xfce-desktop/root/.[a-zA-Z]*            	root
 gtk-2.0/*                  	etc/gtk-2.0
 desktop-defaults-mx/*                       usr/share/desktop-defaults-mx
 mx-edit-as-root.sh		usr/bin
+wallpaper/* 	usr/share/backgrounds
