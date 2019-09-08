@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (19.09.03) UNRELEASED; urgency=medium
+
+  * update notifications theme to "Default" 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 08 Sep 2019 14:07:21 -0400
+
 desktop-defaults-mx-xfce (19.09.02) mx; urgency=medium
 
   * added old orage config from mx17 
