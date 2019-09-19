@@ -1,9 +1,12 @@
-desktop-defaults-mx-xfce (19.09.04) UNRELEASED; urgency=medium
+desktop-defaults-mx-xfce (19.09.05) mx; urgency=medium
 
   * update notifications theme to "Default" 
   * add pulse-start back to the autostart setup
+  * use orage clock plugin
+  * update clock12or24 to modify orage plugin
+  * enable auto config displays 
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 08 Sep 2019 20:36:31 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 18 Sep 2019 20:10:42 -0400
 
 desktop-defaults-mx-xfce (19.09.02) mx; urgency=medium
 
