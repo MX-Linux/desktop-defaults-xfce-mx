@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (mx) UNRELEASED; urgency=medium
+
+  * translation refresh 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 28 Sep 2019 14:57:32 -0400
+
 desktop-defaults-mx-xfce (19.09.05) mx; urgency=medium
 
   * update notifications theme to "Default" 
