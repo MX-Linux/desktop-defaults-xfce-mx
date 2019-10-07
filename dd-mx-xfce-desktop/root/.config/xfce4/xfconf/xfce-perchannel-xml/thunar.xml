@@ -11,4 +11,5 @@
   <property name="misc-recursive-permissions" type="string" value="THUNAR_RECURSIVE_PERMISSIONS_NEVER"/>
   <property name="last-show-hidden" type="bool" value="false"/>
   <property name="last-side-pane" type="string" value="ThunarShortcutsPane"/>
+  <property name="misc-show-delete-action" type="bool" value="true"/>
 </channel>

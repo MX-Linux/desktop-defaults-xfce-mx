@@ -125,7 +125,7 @@
    <name xml:lang="sv">Öppna root Thunar här</name>
    <name xml:lang="zh_TW">在此處以 root 身份開啟 Thunar 視窗</name>
    <unique-id>1391443434179984-1</unique-id>
-   <command>mx-pkexec thunar %f</command>
+   <command>mx-pkexec thunar "%f"</command>
    <description>Open this folder with administrative rights</description>
    <description xml:lang="am">Open this folder with administrative rights</description>
    <description xml:lang="ca">Obre aquesta carpeta amb drets d'administrador</description>
