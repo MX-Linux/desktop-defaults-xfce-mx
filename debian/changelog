@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (19.10.02) mx; urgency=medium
+
+  * modify uca open root thunar function to work with folders with spaces in name
+  * modify thunar right click menu to show delete function 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 06 Oct 2019 21:55:49 -0400
+
 desktop-defaults-mx-xfce (19.10.01) mx; urgency=medium
 
   * modify default workspace rows in panel settings 
