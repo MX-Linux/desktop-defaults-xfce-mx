@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (19.10.03) mx; urgency=medium
+
+  * reverse change to display autoconfig settings 
+  * order desktop icons on live system
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 12 Oct 2019 17:19:46 -0400
+
 desktop-defaults-mx-xfce (19.10.02) mx; urgency=medium
 
   * modify uca open root thunar function to work with folders with spaces in name
