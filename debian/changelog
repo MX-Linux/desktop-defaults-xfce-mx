@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (20.01.02) mx; urgency=medium
+
+  * revise drop-down terminal defaults
+  * do not install CUPS web interface desktop entry 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 23 Jan 2020 18:40:55 -0500
+
 desktop-defaults-mx-xfce (20.01.01) mx; urgency=medium
 
   * revise terminal defaults to show menu and scroll bar
