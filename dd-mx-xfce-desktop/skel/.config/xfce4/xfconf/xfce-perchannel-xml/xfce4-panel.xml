@@ -38,6 +38,7 @@
       <property name="include-all-workspaces" type="bool" value="true"/>
       <property name="flat-buttons" type="bool" value="false"/>
       <property name="show-handle" type="bool" value="false"/>
+      <property name="sort-order" type="int" value="4"/>
     </property>
     <property name="plugin-15" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>

@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (20.01.05) mx; urgency=medium
+
+  * switch to no sorting on tasklist (window buttons) (fixes disappering tasks bug) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 30 Jan 2020 20:28:25 -0500
+
 desktop-defaults-mx-xfce (20.01.04) mx; urgency=medium
 
   * remove gtk customizations on systray 
