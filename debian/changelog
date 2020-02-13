@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (20.01.06) mx; urgency=medium
+
+  * final for mx19.1 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 12 Feb 2020 20:14:23 -0500
+
 desktop-defaults-mx-xfce (20.01.05) mx; urgency=medium
 
   * switch to no sorting on tasklist (window buttons) (fixes disappering tasks bug) 
