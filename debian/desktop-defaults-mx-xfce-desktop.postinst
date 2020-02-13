@@ -24,4 +24,12 @@ else
     cp /usr/share/desktop-defaults-mx/uca.xml /root/.config/Thunar/uca.xml  
 fi
 
+if [ -d /etc/skel/.config/xfce4/panel ]; then
+    cp /usr/share/desktop-defaults-mx/xfce4-orageclock-plugin-1.rc /etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
+fi
+
+if [ -d /root/.config/xfce4/panel ]; then
+    cp /usr/share/desktop-defaults-mx/xfce4-orageclock-plugin-1.rc /root/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
+fi
+
 exit 0

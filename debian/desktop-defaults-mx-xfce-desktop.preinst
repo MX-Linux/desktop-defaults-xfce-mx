@@ -1,9 +1,0 @@
-#! /bin/sh
-
-set -e
-
-if [ -e /etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc ]; then
-    rm /etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc
-fi
-
-exit 0
