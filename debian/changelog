@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (20.12.01) mx; urgency=medium
+
+  * adjust multi-keyboard layout detection in fbxkb-start
+
+ -- fehlix <fehlix@mxlinux.org>  Sun, 20 Dec 2020 16:52:19 -0400
+
 desktop-defaults-mx-xfce (20.06.01) mx; urgency=medium
 
   * moved clock12or24 to -common
