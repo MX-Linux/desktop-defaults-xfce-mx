@@ -2,15 +2,47 @@
 
 ##script to detect multiple keyboards at login and launch fbxkb if found.
 
-# start fbxkb if multiples present. 
+# start fbxkb if multiples present.
 
 #check multiple keyboard layouts
-if  setxkbmap -query | grep -sq '^layout:.*,'; then
-	echo "multiple keyboards found"
-	fbxkb &
-	exit 0
+
+#check xfce keyboard system, if present
+MULTIPLE=""
+USE_SYSTEM_KBD="true"
+
+if [ "$XDG_CURRENT_DESKTOP" == "XFCE" ]; then
+    # XFCE
+    # check xfce xfconf settings
+    XKBDISABLE=$(xfconf-query -c keyboard-layout -p /Default/XkbDisable 2>/dev/null | grep -E 'false|true')
+    RET=$?
+    if [ "$RET" = "0" ] && [ "$XKBDISABLE" = "false" ]; then
+        USE_SYSTEM_KBD=$XKBDISABLE
+        MULTIPLE=$(xfconf-query -c keyboard-layout -p /Default/XkbLayout 2>/dev/null | grep -sq ',' && echo true || echo false)
+    fi
+
+    if [ -z "$XKBDISABLE" ]; then
+        # check xfce xml-settings
+        KBD_LAYOUT_XML="/home/$USER/.config/xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml"
+        XKBDISABLE=$(grep -oP 'XkbDisable.*\K(false|true)'  "$KBD_LAYOUT_XML" 2>/dev/null)
+        RET=$?
+        if [ "$RET" = "0" ] && [ "$XKBDISABLE" = "false" ]; then
+            USE_SYSTEM_KBD=$XKBDISABLE
+            MULTIPLE=$(grep -sq 'XkbLayout.*,' "$KBD_LAYOUT_XML" 2>/dev/null && echo true || echo false)
+        fi
+    fi
+fi
+
+if [ "$USE_SYSTEM_KBD"  ==  "true" ]; then
+    # check multiple keyboard layouts
+    MULTIPLE=$(setxkbmap -query | grep -sq '^layout:.*,' 2>/dev/null && echo true || echo false)
+fi
+
+if [ "$MULTIPLE" == "true" ]; then
+    echo "multiple keyboards found"
+    fbxkb &
 else
-	echo "only one keyboard"
+    echo "only one keyboard"
 fi
 
 exit 0
+
