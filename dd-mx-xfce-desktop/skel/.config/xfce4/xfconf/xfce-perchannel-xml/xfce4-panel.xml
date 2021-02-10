@@ -72,7 +72,7 @@
       </property>
     </property>
     <property name="plugin-20" type="string" value="whiskermenu"/>
-    <property name="plugin-1" type="string" value="xfce4-orageclock-plugin"/>
+    <property name="plugin-1" type="string" value="datetime"/>
     <property name="plugin-7" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="14449098302.desktop"/>
