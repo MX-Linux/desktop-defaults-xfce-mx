@@ -1,7 +1,7 @@
 dd-mx-xfce-system/skel/.[a-zA-Z]* 		etc/skel
 dd-mx-xfce-system/root/.[a-zA-Z]*            	root
 #Printers-(CUPS).desktop    	usr/share/applications
-tumblerd-monitor			usr/local/bin
+#tumblerd-monitor			usr/local/bin
 blueman-start 			usr/local/bin 
 fbxkb-start 			usr/local/bin 
 56xfce4-qtconfig              etc/X11/Xsession.d
