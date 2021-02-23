@@ -82,7 +82,7 @@
     <property name="cycle_preview" type="bool" value="true"/>
     <property name="cycle_tabwin_mode" type="int" value="0"/>
     <property name="sync_to_vblank" type="bool" value="false"/>
-    <property name="zoom_desktop" type="bool" value="true"/>
+    <property name="zoom_desktop" type="bool" value="false"/>
     <property name="horiz_scroll_opacity" type="bool" value="false"/>
   </property>
 </channel>
