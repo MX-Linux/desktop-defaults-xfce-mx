@@ -7,10 +7,17 @@ if [ "$BASESTARTUP" = x-session-manager ]; then
 fi
 case "$BASESTARTUP" in
   xfce4-session|startxfce4)
-      #set qt environment variables to follow gtk2
-      export QT_QPA_PLATFORMTHEME=gtk2
-      export QT_PLATFORMTHEME=gtk2
-      export QT_PLATFORM_PLUGIN=gtk2
+      #set qt environment variables to follow user chosen platform
+      #default plugin is gtk2
+      #$HOME/.config/MX-Linux/qt_plugin.conf can hold a user settable value
+      file="$HOME/.config/MX-Linux/qt_plugin.conf"
+      plugin="gtk2"
+      if [ -e "$file" ]; then
+		plugin=$(cat "$file")
+	  fi
+      export QT_QPA_PLATFORMTHEME="$plugin"
+      export QT_PLATFORMTHEME="$plugin"
+      export QT_PLATFORM_PLUGIN="$plugin"
       if command -v xfconf-query >/dev/null; then
          export QT_SCALE_FACTOR=$(xfconf-query -c xsettings -p /Gdk/WindowScalingFactor 2>/dev/null)
          [ -z "${QT_SCALE_FACTOR}" ] && unset QT_SCALE_FACTOR
