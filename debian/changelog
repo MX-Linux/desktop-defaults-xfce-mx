@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.03.02mx21) mx; urgency=medium
+
+  * remove percentage from panel icon
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 17 Mar 2021 20:16:32 -0400
+
 desktop-defaults-mx-xfce (21.03.01mx21) mx; urgency=medium
 
   * add clipman autostart

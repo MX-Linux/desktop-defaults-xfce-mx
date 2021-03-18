@@ -9,5 +9,6 @@
     <property name="lid-action-on-battery" type="uint" value="0"/>
     <property name="logind-handle-lid-switch" type="bool" value="false"/>
     <property name="lid-action-on-ac" type="uint" value="0"/>
+    <property name="show-panel-label" type="int" value="0"/>
   </property>
 </channel>
