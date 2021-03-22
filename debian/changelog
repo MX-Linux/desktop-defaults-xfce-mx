@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.03.03mx21) mx; urgency=medium
+
+  * new gtk and wm default light theme
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 22 Mar 2021 19:49:38 -0400
+
 desktop-defaults-mx-xfce (21.03.02mx21) mx; urgency=medium
 
   * remove percentage from panel icon
