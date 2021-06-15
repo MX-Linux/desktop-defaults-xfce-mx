@@ -1,7 +1,5 @@
 dd-mx-xfce-desktop/skel/.[a-zA-Z]* 		etc/skel
 dd-mx-xfce-desktop/root/.[a-zA-Z]*            	root
 #gtk-2.0/*                  	etc/gtk-2.0
-desktop-defaults-mx/*                       usr/share/desktop-defaults-mx
-mx-edit-as-root.sh		usr/bin
 #wallpaper/* 	usr/share/backgrounds
 dd-mx-xfce-desktop/docklike.rc		/etc/xdg/xfce4/panel
