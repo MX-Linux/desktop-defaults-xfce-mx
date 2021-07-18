@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.07.01mx21) mx; urgency=medium
+
+  * change default icon set
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 17 Jul 2021 20:29:56 -0400
+
 desktop-defaults-mx-xfce (21.06.01mx21) mx; urgency=medium
 
   * seperate out thunar custom actions from desktop defaults
