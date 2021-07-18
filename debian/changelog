@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.07.02mx21) mx; urgency=medium
+
+  * update mimeapps.list file 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 18 Jul 2021 08:40:42 -0400
+
 desktop-defaults-mx-xfce (21.07.01mx21) mx; urgency=medium
 
   * change default icon set
