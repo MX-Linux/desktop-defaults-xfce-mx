@@ -2,4 +2,5 @@
 
 <channel name="pointers" version="1.0">
   <property name="DisableTouchpadWhileTyping" type="bool" value="true"/>
+  <property name="DisableTouchpadDuration" type="double" value="0.500000"/>
 </channel>
