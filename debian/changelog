@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.07.03mx21) mx; urgency=medium
+
+  * update touchpad settings
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 31 Jul 2021 16:27:44 -0400
+
 desktop-defaults-mx-xfce (21.07.02mx21) mx; urgency=medium
 
   * update mimeapps.list file 
