@@ -8,4 +8,4 @@ fbxkb-start 			usr/local/bin
 kbd.sh                     	usr/local/bin
 bin/*	usr/bin
 thumbnailers/*			usr/share/thumbnailers
-pulse-start				usr/local/bin
+#pulse-start				usr/local/bin
