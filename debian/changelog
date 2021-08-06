@@ -1,6 +1,7 @@
 desktop-defaults-mx-xfce (21.08.01mx21) mx; urgency=medium
 
   * update panel defaults 
+  * remove unneeded pulse-start and volumeicon entries
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 06 Aug 2021 17:01:59 -0400
 
