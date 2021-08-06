@@ -21,12 +21,6 @@
         <value type="int" value="20"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
-      <property name="background-color" type="array">
-        <value type="uint" value="8481"/>
-        <value type="uint" value="10537"/>
-        <value type="uint" value="13878"/>
-        <value type="uint" value="65535"/>
-      </property>
       <property name="mode" type="int" value="2"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="nrows" type="uint" value="1"/>
