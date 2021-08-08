@@ -24,6 +24,12 @@
       <property name="mode" type="int" value="2"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="nrows" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.750000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.000000"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
