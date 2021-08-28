@@ -1,6 +1,7 @@
 desktop-defaults-mx-xfce (21.08.02mx21) mx; urgency=medium
 
   * revise defaults mimetypes list 
+  * update default wallpaper
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 27 Aug 2021 21:34:59 -0400
 
