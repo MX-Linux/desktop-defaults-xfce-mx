@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.09.01mx21) mx; urgency=medium
+
+  * revise to comfort themes
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 01 Sep 2021 20:55:03 -0400
+
 desktop-defaults-mx-xfce (21.08.02mx21) mx; urgency=medium
 
   * revise defaults mimetypes list 
