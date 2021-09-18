@@ -2,3 +2,5 @@
 pinned=/usr/share/applications/firefox.desktop;/usr/share/applications/thunar.desktop;
 indicatorStyle=2
 indicatorOrientation=2
+indicatorColor=rgb(255,163,72)
+inactiveColor=rgb(76,166,230)
