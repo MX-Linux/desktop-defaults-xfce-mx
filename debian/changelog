@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.09.02mx21) mx; urgency=medium
+
+  * update docklike.rc indicator colors 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 18 Sep 2021 13:24:12 -0400
+
 desktop-defaults-mx-xfce (21.09.01mx21) mx; urgency=medium
 
   * revise to comfort themes
