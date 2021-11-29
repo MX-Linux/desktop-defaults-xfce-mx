@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.11.29mx21) mx; urgency=medium
+
+  * add inactiveIndicatorStyle=2 to match new preferences options
+
+ -- SwampRabbit <swamprabbit@mxlinux.org>  Mon, 29 Nov 2021 10:11:44 -0500
+
 desktop-defaults-mx-xfce (21.10.02mx21) mx; urgency=medium
 
   * mute sticky keys 
