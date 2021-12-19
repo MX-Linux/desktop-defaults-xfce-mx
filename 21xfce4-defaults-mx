@@ -1,0 +1,20 @@
+# copy mx xfce defaults if xfce settings don't exist
+# /etc/X11/Xsession.d/21xfce4-defaults-mx
+
+# only copy defaults if xfce is installed
+# even then, don't copy if previous settings exist
+if [ -x /usr/bin/xfce4-session ]; then
+      if [ ! -d "$HOME/.config/xfce4" ]; then
+	echo "$HOME/.config/xfce4 not found" 
+        mkdir -p "$HOME/.config/xfce4"
+        cp -R /etc/skel/.config/xfce4 "$HOME/.config/"
+      fi
+      if [ ! -d "$HOME/.config/Thunar" ]; then
+        mkdir -p "$HOME/.config/Thunar"
+        cp -R /etc/skel/.config/Thunar "$HOME/.config/"
+      fi	  
+      if [ ! -e "$HOME/.config/menus/xfce-settings-manager.menu" ]; then
+        mkdir -p "$HOME/.config/menus"
+        cp /etc/skel/.config/menus/xfce-settings-manager.menu "$HOME/.config/menus/"
+      fi
+fi

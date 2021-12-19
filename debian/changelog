@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (21.12.01mx21) mx; urgency=medium
+
+  * copy defaults if not otherwise present when xfce is installed 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 19 Dec 2021 16:33:44 -0500
+
 desktop-defaults-mx-xfce (21.11.29mx21) mx; urgency=medium
 
   * add inactiveIndicatorStyle=2 to match new preferences options
