@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (20.12.02) mx; urgency=medium
+
+  * adjust thunar-custom-actions-mx 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 31 Dec 2021 12:23:57 -0500
+
 desktop-defaults-mx-xfce (20.12.01) mx; urgency=medium
 
   * adjust multi-keyboard layout detection in fbxkb-start
