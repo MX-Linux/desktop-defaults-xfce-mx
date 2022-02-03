@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (22.02.01mx21) mx; urgency=medium
+
+  * remove mimeapps.list from skel
+  * add xfce-mimeapps.list to xdg
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 03 Feb 2022 17:44:43 -0500
+
 desktop-defaults-mx-xfce (21.12.01mx21) mx; urgency=medium
 
   * copy defaults if not otherwise present when xfce is installed 
