@@ -4,3 +4,4 @@ dd-mx-xfce-desktop/root/.[a-zA-Z]*            	root
 #wallpaper/* 	usr/share/backgrounds
 dd-mx-xfce-desktop/docklike.rc		/etc/xdg/xfce4/panel
 21xfce4-defaults-mx             etc/X11/Xsession.d
+xdg/*						etc/xdg/
