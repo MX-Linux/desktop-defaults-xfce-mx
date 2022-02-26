@@ -1,4 +1,5 @@
-[Added Associations]
+[Default Applications]
+inode/directory=xfce4-file-manager.desktop;
 text/plain=featherpad.desktop;
 audio/mpeg=clementine.desktop;
 application/x-deb=gdebi.desktop;
@@ -11,15 +12,9 @@ image/jpg=org.gnome.gThumb.desktop;
 image/jpeg=org.gnome.gThumb.desktop;
 image/gif=org.gnome.gThumb.desktop;
 image/bmp=org.gnome.gThumb.desktop;
-inode/directory=xfce4-file-manager.desktop;
 text/x-python=Py-Loader.desktop;
 text/html=xfce4-web-browser.desktop;
 x-scheme-handler/trash=xfce4-file-manager.desktop;
 x-scheme-handler/mailto=xfce4-mail-reader.desktop;
 x-scheme-handler/http=xfce4-web-browser.desktop;
 x-scheme-handler/https=xfce4-web-browser.desktop;
-
-[Default Applications]
-inode/directory=xfce4-file-manager.desktop;
-text/plain=featherpad.desktop;
-x-scheme-handler/trash=xfce4-file-manager.desktop;
