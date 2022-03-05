@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (22.03.01mx21) mx; urgency=medium
+
+  * update xfce-mimeapps.list 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 05 Mar 2022 09:36:56 -0500
+
 desktop-defaults-mx-xfce (22.02.02mx21) mx; urgency=medium
 
   * update xfce-mimeapps.list 
