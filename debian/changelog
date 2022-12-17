@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (22.12.01mx21) mx; urgency=medium
+
+  * update default wallpaper to MX_Tangram 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 17 Dec 2022 11:25:09 -0500
+
 desktop-defaults-mx-xfce (22.03.02mx21) mx; urgency=medium
 
   * add additoinal defaults
