@@ -2,7 +2,7 @@
 inode/directory=xfce4-file-manager.desktop;
 text/plain=featherpad.desktop;
 audio/mpeg=clementine.desktop;
-application/x-deb=gdebi.desktop;
+application/x-deb=deb-installer.desktop;gdebi.desktop;
 application/pdf=qpdfview.desktop;
 application/vnd.ms-htmlhelp=xfce4-web-browser.desktop;
 application/xhtml+xml=xfce4-web-browser.desktop;
