@@ -3,38 +3,45 @@
 
 # only copy defaults if xfce is installed
 # even then, don't copy if previous settings exist
+# only do once, set a check file in .config/xfce4 when run
+
 if [ -x /usr/bin/xfce4-session ]; then
-	  for i in $(ls --format single-column /etc/skel/.config/xfce4/); do
-        if [ ! -e /etc/skel/.config/xfce4/$i ]; then
-      	cp -R /etc/skel/.config/xfce4/$i "$HOME/.config/xfce4/"
-      	fi
-      done
-      for i in $(ls --format single-column /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/); do
-        if [ ! -e /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/$i ]; then
-      	cp /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/$i "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/"
-      	fi
-      done
-      for i in $(ls --format single-column /etc/skel/.config/xfce4/terminal/); do
-        if [ ! -e /etc/skel/.config/xfce4/terminal/$i ]; then
-      	cp /etc/skel/.config/xfce4/terminal/$i "$HOME/.config/xfce4/terminal/"
-      	fi
-      done
-      for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
-        if [ ! -e /etc/skel/.config/xfce4/panel/$i ]; then
-      	cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
-      	fi
-      done
-      for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
-        if [ ! -e /etc/skel/.config/xfce4/panel/$i ]; then
-      	cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
-      	fi
-      done
-      if [ ! -d "$HOME/.config/Thunar" ]; then
-        mkdir -p "$HOME/.config/Thunar"
-        cp -R /etc/skel/.config/Thunar "$HOME/.config/"
-      fi	  
-      if [ ! -e "$HOME/.config/menus/xfce-settings-manager.menu" ]; then
-        mkdir -p "$HOME/.config/menus"
-        cp /etc/skel/.config/menus/xfce-settings-manager.menu "$HOME/.config/menus/"
-      fi
+	if [ ! -e "$HOME/.config/xfce4/xfce-mx-defaults" ]; then
+		mkdir -p "$HOME/.config/xfce4"
+		for i in $(ls --format single-column /etc/skel/.config/xfce4/); do
+	        	if [ ! -e "$HOME/.config/xfce4/$i" ]; then
+      				cp -R /etc/skel/.config/xfce4/$i "$HOME/.config/xfce4/"
+      			fi
+          	done
+      		for i in $(ls --format single-column /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/); do
+        		if [ ! -e "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/$i" ]; then
+      				cp /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/$i "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/"
+      			fi
+      		done
+      		for i in $(ls --format single-column /etc/skel/.config/xfce4/terminal/); do
+        		if [ ! -e "$HOME/.config/xfce4/terminal/$i" ]; then
+      				cp /etc/skel/.config/xfce4/terminal/$i "$HOME/.config/xfce4/terminal/"
+      			fi
+      		done
+      		for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
+        		if [ ! -e "$HOME/.config/xfce4/panel/$i" ]; then
+      				cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
+      			fi
+      		done
+      		for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
+        		if [ ! -e "$HOME/.config/xfce4/panel/$i" ]; then
+      				cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
+      			fi
+      		done
+      		if [ ! -d "$HOME/.config/Thunar" ]; then
+        		mkdir -p "$HOME/.config/Thunar"
+        		cp -R /etc/skel/.config/Thunar "$HOME/.config/"
+      		fi	  
+      		if [ ! -e "$HOME/.config/menus/xfce-settings-manager.menu" ]; then
+        		mkdir -p "$HOME/.config/menus"
+        		cp /etc/skel/.config/menus/xfce-settings-manager.menu "$HOME/.config/menus/"
+      		fi
+		echo "to reset MX defaults, remove all files in this directory" >>"$HOME/.config/xfce4/xfce-mx-defaults"
+		echo "to use Xfce project defaults instead of MX defaults, remove all files in this directory except xfce-mx-defaults" >>"$HOME/.config/xfce4/xfce-mx-defaults"
+	fi
 fi
