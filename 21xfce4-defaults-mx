@@ -7,7 +7,7 @@
 
 if [ -x /usr/bin/xfce4-session ]; then
 	if [ ! -e "$HOME/.config/xfce4/xfce-mx-defaults" ]; then
-		mkdir -p "$HOME/.config/xfce4"
+		test -d "$HOME/.config/xfce4" || mkdir -p "$HOME/.config/xfce4"
 		for i in $(ls --format single-column /etc/skel/.config/xfce4/); do
 	        	if [ ! -e "$HOME/.config/xfce4/$i" ]; then
       				cp -R /etc/skel/.config/xfce4/$i "$HOME/.config/xfce4/"
