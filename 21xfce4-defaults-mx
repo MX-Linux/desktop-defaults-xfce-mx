@@ -4,11 +4,31 @@
 # only copy defaults if xfce is installed
 # even then, don't copy if previous settings exist
 if [ -x /usr/bin/xfce4-session ]; then
-      if [ ! -d "$HOME/.config/xfce4" ]; then
-	echo "$HOME/.config/xfce4 not found" 
-        mkdir -p "$HOME/.config/xfce4"
-        cp -R /etc/skel/.config/xfce4 "$HOME/.config/"
-      fi
+	  for i in $(ls --format single-column /etc/skel/.config/xfce4/); do
+        if [ ! -e $i ]; then
+      	cp -R /etc/skel/.config/xfce4/$i "$HOME/.config/xfce4/"
+      	fi
+      done
+      for i in $(ls --format single-column /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/); do
+        if [ ! -e $i ]; then
+      	cp /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/$i "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/"
+      	fi
+      done
+      for i in $(ls --format single-column /etc/skel/.config/xfce4/terminal/); do
+        if [ ! -e $i ]; then
+      	cp /etc/skel/.config/xfce4/terminal/$i "$HOME/.config/xfce4/terminal/"
+      	fi
+      done
+      for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
+        if [ ! -e $i ]; then
+      	cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
+      	fi
+      done
+      for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
+        if [ ! -e $i ]; then
+      	cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
+      	fi
+      done
       if [ ! -d "$HOME/.config/Thunar" ]; then
         mkdir -p "$HOME/.config/Thunar"
         cp -R /etc/skel/.config/Thunar "$HOME/.config/"
