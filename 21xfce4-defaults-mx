@@ -5,27 +5,27 @@
 # even then, don't copy if previous settings exist
 if [ -x /usr/bin/xfce4-session ]; then
 	  for i in $(ls --format single-column /etc/skel/.config/xfce4/); do
-        if [ ! -e $i ]; then
+        if [ ! -e /etc/skel/.config/xfce4/$i ]; then
       	cp -R /etc/skel/.config/xfce4/$i "$HOME/.config/xfce4/"
       	fi
       done
       for i in $(ls --format single-column /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/); do
-        if [ ! -e $i ]; then
+        if [ ! -e /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/$i ]; then
       	cp /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/$i "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/"
       	fi
       done
       for i in $(ls --format single-column /etc/skel/.config/xfce4/terminal/); do
-        if [ ! -e $i ]; then
+        if [ ! -e /etc/skel/.config/xfce4/terminal/$i ]; then
       	cp /etc/skel/.config/xfce4/terminal/$i "$HOME/.config/xfce4/terminal/"
       	fi
       done
       for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
-        if [ ! -e $i ]; then
+        if [ ! -e /etc/skel/.config/xfce4/panel/$i ]; then
       	cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
       	fi
       done
       for i in $(ls --format single-column /etc/skel/.config/xfce4/panel/); do
-        if [ ! -e $i ]; then
+        if [ ! -e /etc/skel/.config/xfce4/panel/$i ]; then
       	cp /etc/skel/.config/xfce4/panel/$i "$HOME/.config/xfce4/panel/"
       	fi
       done
