@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (23.01.02mx21) mx; urgency=medium
+
+  * user gets mx defaults unless previous settings exist
+  * override check file present so that users can get Xfce defaults if they want them.
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 21 Jan 2023 13:29:59 -0500
+
 desktop-defaults-mx-xfce (23.01.01mx21) mx; urgency=medium
 
   * change mx-menu-editor to menulibre
