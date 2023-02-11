@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (23.02.01mx23) mx; urgency=medium
+
+  * update display settings
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 11 Feb 2023 09:22:08 -0500
+
 desktop-defaults-mx-xfce (23.01.02mx21) mx; urgency=medium
 
   * user gets mx defaults unless previous settings exist
