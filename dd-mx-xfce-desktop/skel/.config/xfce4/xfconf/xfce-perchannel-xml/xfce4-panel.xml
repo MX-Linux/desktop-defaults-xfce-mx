@@ -65,7 +65,7 @@
       </property>
     </property>
     <property name="plugin-20" type="string" value="whiskermenu"/>
-    <property name="plugin-1" type="string" value="datetime"/>
+    <property name="plugin-1" type="string" value="org.xfce.orage.clock"/>
     <property name="plugin-9" type="string" value="actions">
       <property name="appearance" type="uint" value="0"/>
       <property name="items" type="array">
