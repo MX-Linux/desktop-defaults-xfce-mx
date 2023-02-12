@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (23.02.02mx23) mx; urgency=medium
+
+  * change default background 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 11 Feb 2023 23:54:43 -0500
+
 desktop-defaults-mx-xfce (23.02.01mx23) mx; urgency=medium
 
   * update display settings
