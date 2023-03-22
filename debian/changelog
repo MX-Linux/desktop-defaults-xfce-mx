@@ -1,3 +1,11 @@
+desktop-defaults-mx-xfce (23.03.01mx23) mx; urgency=medium
+
+  * update clock12or24 to work with xfce clock plugin
+  * replace orage clock with xfce clock
+  * remove datetime configuration information
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 22 Mar 2023 18:55:37 -0400
+
 desktop-defaults-mx-xfce (23.02.02mx23) mx; urgency=medium
 
   * change default background 

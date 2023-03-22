@@ -65,7 +65,13 @@
       </property>
     </property>
     <property name="plugin-20" type="string" value="whiskermenu"/>
-    <property name="plugin-1" type="string" value="org.xfce.orage.clock-plugin"/>
+    <property name="plugin-1" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+      <property name="command" type="string" value="orage"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="digital-time-format" type="string" value="%H:%M"/>
+      <property name="digital-time-font" type="string" value="Sans Bold 9"/>
+    </property>
     <property name="plugin-9" type="string" value="actions">
       <property name="appearance" type="uint" value="0"/>
       <property name="items" type="array">
