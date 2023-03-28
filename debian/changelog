@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (23.03.02mx23) mx; urgency=medium
+
+  * adjust default panel parameters 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 27 Mar 2023 21:37:42 -0400
+
 desktop-defaults-mx-xfce (23.03.01mx23) mx; urgency=medium
 
   * replace orage clock with xfce clock

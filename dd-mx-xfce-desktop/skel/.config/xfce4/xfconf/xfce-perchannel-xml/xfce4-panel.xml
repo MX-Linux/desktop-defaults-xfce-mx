@@ -8,7 +8,7 @@
       <property name="position" type="string" value="p=5;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="35"/>
+      <property name="size" type="uint" value="36"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="9"/>
         <value type="int" value="1"/>
@@ -56,6 +56,7 @@
       <property name="names-hidden" type="array">
       </property>
       <property name="size-max" type="uint" value="24"/>
+      <property name="icon-size" type="int" value="0"/>
       <property name="names-ordered" type="array">
         <value type="string" value="apt-notifier.py"/>
         <value type="string" value="yad"/>
