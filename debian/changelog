@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (23.04.03mx23) mx; urgency=medium
+
+  * new multi-monitor wallpaper configurate (xfce4-desktop.xml) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 27 Apr 2023 20:47:44 -0400
+
 desktop-defaults-mx-xfce (23.04.02mx23) mx; urgency=medium
 
   * add xfce4-panel-tweaks.css to gtk-3.0 folder
