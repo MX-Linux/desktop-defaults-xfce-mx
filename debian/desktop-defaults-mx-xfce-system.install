@@ -1,6 +1,6 @@
 dd-mx-xfce-system/skel/.[a-zA-Z]* 		etc/skel
 dd-mx-xfce-system/root/.[a-zA-Z]*            	root
-dd-mx-xfce-system/xdg/autostart		xdg/autostart
+dd-mx-xfce-system/xdg/autostart		etc/xdg/autostart
 56xfce4-qtconfig              etc/X11/Xsession.d
 bin/*	usr/bin
 thumbnailers/*			usr/share/thumbnailers
