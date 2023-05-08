@@ -2,11 +2,11 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=fbxkb
+Name=kbd
 Comment=
-Exec=/usr/bin/fbxkb
+Exec=/usr/bin/kbd.sh
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
-Hidden=true
+Hidden=false
 

@@ -1,3 +1,11 @@
+desktop-defaults-mx-xfce (23.05.01mx23) mx; urgency=medium
+
+  * update startup scripts
+  * move things out of /usr/local/bin
+  * gxkb instead of fxkb 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 08 May 2023 19:49:10 -0400
+
 desktop-defaults-mx-xfce (23.04.03mx23) mx; urgency=medium
 
   * new multi-monitor wallpaper configurate (xfce4-desktop.xml) 

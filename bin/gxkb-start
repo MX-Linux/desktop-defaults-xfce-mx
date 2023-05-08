@@ -1,8 +1,8 @@
 #!/bin/bash
 
-##script to detect multiple keyboards at login and launch fbxkb if found.
+##script to detect multiple keyboards at login and launch gxkb if found.
 
-# start fbxkb if multiples present.
+# start gxkb if multiples present.
 
 #check multiple keyboard layouts
 
@@ -39,7 +39,12 @@ fi
 
 if [ "$MULTIPLE" == "true" ]; then
     echo "multiple keyboards found"
-    fbxkb &
+    [ -f ~/.config/gxkb/gxkb.cfg ] && rm -f ~/.config/gxkb/gxkb.cfg
+    gxkb & disown
+    sleep 1
+    sed -i -r 's:^(group_policy).*:\1=0:
+               s:^(default_group).*:\1=1:
+              ' ~/.config/gxkb/gxkb.cfg
 else
     echo "only one keyboard"
 fi

@@ -1,8 +1,6 @@
 dd-mx-xfce-system/skel/.[a-zA-Z]* 		etc/skel
 dd-mx-xfce-system/root/.[a-zA-Z]*            	root
-blueman-start 			usr/local/bin 
-fbxkb-start 			usr/local/bin 
+dd-mx-xfce-system/xdg/autostart		xdg/autostart
 56xfce4-qtconfig              etc/X11/Xsession.d
-kbd.sh                     	usr/local/bin
 bin/*	usr/bin
 thumbnailers/*			usr/share/thumbnailers
