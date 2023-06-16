@@ -48,7 +48,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="xfce4-find-cursor"/>
       <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder --collapsed"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;equal" type="string" value="magnus"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;m" type="string" value="magnus"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
