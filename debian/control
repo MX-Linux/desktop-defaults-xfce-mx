@@ -10,7 +10,7 @@ Package: desktop-defaults-mx-xfce
 Architecture: all
 Conflicts:  desktop-defaults-xfce-mx17
 Replaces:  desktop-defaults-xfce-mx17
-Depends:  desktop-defaults-mx-xfce-desktop, desktop-defaults-mx-xfce-system, thunar-custom-actions-mx, thunar-modified-desktop-file
+Depends:  desktop-defaults-mx-xfce-desktop | desktop-defaults-mx-xfce-desktop-rpi, desktop-defaults-mx-xfce-system, thunar-custom-actions-mx, thunar-modified-desktop-file
 Recommends: lightdm
 Description: Metapackage for desktop defaults for MX Linux Xfce.
 
