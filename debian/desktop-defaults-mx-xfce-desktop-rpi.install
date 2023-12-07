@@ -1,0 +1,5 @@
+dd-mx-xfce-desktop-rpi/skel/.[a-zA-Z]* 		etc/skel
+dd-mx-xfce-desktop-rpi/root/.[a-zA-Z]*            	root
+dd-mx-xfce-desktop-rpi/docklike.rc		/etc/xdg/xfce4/panel
+21xfce4-defaults-mx             etc/X11/Xsession.d
+xdg/*						etc/xdg/
