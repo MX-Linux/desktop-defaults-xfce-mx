@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (23.12.03mx23) mx; urgency=medium
+
+  * use compton over xfmw4
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 22 Dec 2023 21:18:30 -0500
+
 desktop-defaults-mx-xfce (23.12.02mx23) mx; urgency=medium
 
   * adjust pi panel default width
