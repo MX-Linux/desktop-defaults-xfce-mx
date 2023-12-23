@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (23.12.04mx23) mx; urgency=medium
+
+  * add compton.conf
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 22 Dec 2023 23:50:58 -0500
+
 desktop-defaults-mx-xfce (23.12.03mx23) mx; urgency=medium
 
   * use compton over xfmw4
