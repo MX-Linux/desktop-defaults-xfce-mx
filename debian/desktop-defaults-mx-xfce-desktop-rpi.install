@@ -3,3 +3,4 @@ dd-mx-xfce-desktop-rpi/root/.[a-zA-Z]*            	root
 dd-mx-xfce-desktop-rpi/docklike.rc		/etc/xdg/xfce4/panel
 21xfce4-defaults-mx             etc/X11/Xsession.d
 xdg/*						etc/xdg/
+restart-gnome-keyring-mx.sh	usr/bin

@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (23.12.06mx23) mx; urgency=medium
+
+  * restart keyring on first boot
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 23 Dec 2023 19:35:53 -0500
+
 desktop-defaults-mx-xfce (23.12.05mx23) mx; urgency=medium
 
   * add compton.conf
