@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (23.12.06mx23) mx; urgency=medium
+
+  * no ellipse for rpi
+  * -desktop package takes over gtk-3.0 folder from -system
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 27 Dec 2023 16:48:44 -0500
+
 desktop-defaults-mx-xfce (23.12.05mx23) mx; urgency=medium
 
   * add compton.conf
