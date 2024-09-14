@@ -1,5 +1,5 @@
 [user]
-pinned=/usr/share/applications/chromium-browser.desktop;/usr/share/applications/thunar.desktop;
+pinned=/usr/share/applications/chromium.desktop;/usr/share/applications/thunar.desktop;
 indicatorStyle=2
 inactiveIndicatorStyle=2
 indicatorOrientation=0
