@@ -1,29 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-desktop" version="1.0">
   <property name="backdrop" type="empty">
-    <property name="screen0" type="empty">
-      <property name="monitor0" type="empty">
-        <property name="image-path" type="string" value="/usr/share/backgrounds/default23.png"/>
-        <property name="image-style" type="int" value="3"/>
-        <property name="image-show" type="bool" value="true"/>
-      </property>
-      <property name="monitor1" type="empty">
-        <property name="image-path" type="string" value="/usr/share/backgrounds/default23.png"/>
-        <property name="image-style" type="int" value="3"/>
-        <property name="image-show" type="bool" value="true"/>
-      </property>
-      <property name="monitor2" type="empty">
-        <property name="image-path" type="string" value="/usr/share/backgrounds/default23.png"/>
-        <property name="image-style" type="int" value="3"/>
-        <property name="image-show" type="bool" value="true"/>
-      </property>
-      <property name="monitor3" type="empty">
-        <property name="image-path" type="string" value="/usr/share/backgrounds/default23.png"/>
-        <property name="image-style" type="int" value="3"/>
-        <property name="image-show" type="bool" value="true"/>
-      </property>
-    </property>
+    <property name="single-workspace-mode" type="bool" value="true"/>
+    <property name="single-workspace-number" type="int" value="1"/>
   </property>
   <property name="desktop-icons" type="empty">
     <property name="icon-size" type="uint" value="32"/>

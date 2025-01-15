@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (25.01.02mx23) mx; urgency=medium
+
+  * update xfdesktop defaults (solve issue on 32 bit systems with wallpaper changes)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 14 Jan 2025 19:05:45 -0500
+
 desktop-defaults-mx-xfce (25.01.01mx23) mx; urgency=medium
 
   * update defaults file for xfce 4.20
