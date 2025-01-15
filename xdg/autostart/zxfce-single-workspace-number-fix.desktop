@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Xfce single-workspace-number fix
+Comment=run once to correct single-workspace-number invalid setting
+Exec=single-workspace-number-fix
+OnlyShowIn=XFCE;
+X-XFCE-Autostart-Phase=Application

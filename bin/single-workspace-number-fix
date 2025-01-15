@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#correct single-workspace-number
+#only do this once
+#xfconfd must be running
+
+
+if [ -e "$HOME/.config/xfce4/single-workspace-number-fix" ]; then
+	exit 0
+else
+ 	touch "$HOME/.config/xfce4/single-workspace-number-fix"	
+	until pgrep xfconfd; do
+		sleep 1
+	done
+	if [ "$(xfconf-query -c xfce4-desktop -p /backdrop/single-workspace-number)" = "-1" ]; then 
+		xfconf-query -c xfce4-desktop -p /backdrop/single-workspace-number -s 1
+	fi
+	if [ -z "$(xfconf-query -c xfce4-desktop --list |grep single-workspace-number)" ]; then 
+		xfconf-query -c xfce4-desktop -p /backdrop/single-workspace-number -s 1 -t int --create
+	fi
+fi
+
+
