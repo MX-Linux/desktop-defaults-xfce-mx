@@ -1,4 +1,11 @@
-desktop-defaults-mx-xfce (25.01.03mx23) mx; urgency=medium
+desktop-defaults-mx-xfce (25.01.04mx23) mx; urgency=medium
+
+  * provide autofix at login for single-workspace-number issue
+  * color style fix as well
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 16 Jan 2025 8:05:12 -0500
+ 
+ desktop-defaults-mx-xfce (25.01.03mx23) mx; urgency=medium
 
   * provide autofix at login for single-workspace-number issue
   * color style fix as well
