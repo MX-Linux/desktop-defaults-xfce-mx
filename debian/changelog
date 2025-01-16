@@ -1,6 +1,7 @@
 desktop-defaults-mx-xfce (25.01.03mx23) mx; urgency=medium
 
   * provide autofix at login for single-workspace-number issue
+  * color style fix as well
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 15 Jan 2025 18:09:24 -0500
 

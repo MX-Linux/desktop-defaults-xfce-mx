@@ -12,12 +12,17 @@ else
 	until pgrep xfconfd; do
 		sleep 1
 	done
+	#fix single-workspace-number
 	if [ "$(xfconf-query -c xfce4-desktop -p /backdrop/single-workspace-number)" = "-1" ]; then 
 		xfconf-query -c xfce4-desktop -p /backdrop/single-workspace-number -s 1
 	fi
 	if [ -z "$(xfconf-query -c xfce4-desktop --list |grep single-workspace-number)" ]; then 
-		xfconf-query -c xfce4-desktop -p /backdrop/single-workspace-number -s 1 -t int --create
+		xfconf-query -c xfce4-desktop -p /backdrop/single-workspace-number --set 1 --type int --create
 	fi
+	#fix color style as well
+	for PROP in $(xfconf-query -c xfce4-desktop -p /backdrop -l | grep image-style); do 
+		xfconf-query -c xfce4-desktop -p ${PROP/%image-style/color-style} --set 0 --type int --create
+	done
 fi
 
 
