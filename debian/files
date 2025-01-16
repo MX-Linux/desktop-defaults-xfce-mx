@@ -1,4 +1,5 @@
-desktop-defaults-mx-xfce-desktop_21.02.02mx21_all.deb system optional
-desktop-defaults-mx-xfce-system_21.02.02mx21_all.deb system optional
-desktop-defaults-mx-xfce_21.02.02mx21_all.deb system optional
-desktop-defaults-mx-xfce_21.02.02mx21_amd64.buildinfo system optional
+desktop-defaults-mx-xfce-desktop-rpi_25.01.04mx23_all.deb system optional
+desktop-defaults-mx-xfce-desktop_25.01.04mx23_all.deb system optional
+desktop-defaults-mx-xfce-system_25.01.04mx23_all.deb system optional
+desktop-defaults-mx-xfce_25.01.04mx23_all.deb system optional
+desktop-defaults-mx-xfce_25.01.04mx23_amd64.buildinfo system optional
