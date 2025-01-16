@@ -3,28 +3,44 @@
 #correct single-workspace-number
 #only do this once
 #xfconfd must be running
+#xfconfd is dbus-activatable, and will be activated and queried with xfconf-query
 
 
 if [ -e "$HOME/.config/xfce4/single-workspace-number-fix" ]; then
-	exit 0
+    exit 0
 else
- 	touch "$HOME/.config/xfce4/single-workspace-number-fix"	
-	until pgrep xfconfd; do
-		sleep 1
-	done
-	PROP=/backdrop/single-workspace-number
-	SET="--create --type int --set"
-	if ! xfconf-query -c xfce4-desktop -p $PROP >/dev/null 2>&1 ||
-   		[ "$(xfconf-query -c xfce4-desktop -p $PROP)" = "-1" ]; then 
-		xfconf-query -c xfce4-desktop -p $PROP $SET 1 
-	fi
+    max_duration=180   # max duration to wait xfconfd for in seconds (3 minutes = 180 seconds)
+    elapsed=0
+    # wait until xfconfd provides results through xfconf-query
+    until xfconf-query -c xfce4-desktop -p /backdrop -l 2>/dev/null | grep -q /backdrop; do
+        sleep 1
+        elapsed=$((elapsed + 1))
+        if [ "$elapsed" -ge "$max_duration" ]; then
+            exit 1
+        fi
+    done
+    SET="--create --type int --set"
+    PROP=/backdrop/single-workspace-number
+    MSET="--create --type bool --set"
+    MODE=/backdrop/single-workspace-mode
+    if xfconf-query -c xfce4-desktop -p $MODE >/dev/null 2>&1 &&
+        [ "$(xfconf-query -c xfce4-desktop -p $MODE)" = "true" ]; then
+        xfconf-query -c xfce4-desktop -p $PROP $SET 0
+    elif ! xfconf-query -c xfce4-desktop -p $PROP >/dev/null 2>&1 ||
+        [ "$(xfconf-query -c xfce4-desktop -p $PROP)" = "-1" ]; then
+        xfconf-query -c xfce4-desktop -p $MODE $MSET false
+        xfconf-query -c xfce4-desktop -p $PROP $SET 1
+    fi
 
-	for PROP in $(xfconf-query -c xfce4-desktop -p /backdrop -l | grep image-style); 
-	do 
-   		STYLE=${PROP/%image-style/color-style} 
-   		CMD="xfconf-query -c xfce4-desktop -p ${STYLE}"; 
-   		$CMD >/dev/null 2>&1 || $CMD $SET 0;  
-   	done
+    for PROP in $(xfconf-query -c xfce4-desktop -p /backdrop -l | grep image-style);
+    do
+        STYLE=${PROP/%image-style/color-style}
+        CMD="xfconf-query -c xfce4-desktop -p ${STYLE}";
+        $CMD >/dev/null 2>&1 || $CMD $SET 0;
+    done
+    touch "$HOME/.config/xfce4/single-workspace-number-fix"
 fi
+
+exit 0
 
 
