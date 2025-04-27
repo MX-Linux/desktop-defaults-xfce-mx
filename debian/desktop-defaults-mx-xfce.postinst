@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remove" ] ; then
-    apt-mark manual desktop-defaults-mx-xfce-system desktop-defaults-mx-xfce-desktop desktop-defaults-mx-xfce-desktop-rpi thunar-custom-actions-mx
+    apt-mark manual desktop-defaults-mx-xfce-system desktop-defaults-mx-xfce-desktop desktop-defaults-mx-xfce-desktop-rpi thunar-custom-actions-mx xfce-modified-default-background
 fi
 
 #DEBHELPER#
