@@ -11,7 +11,7 @@ case "$BASESTARTUP" in
       #set environment variables to follow user chosen platform
       #put whatever environment variable you need in $HOME/.config/MX-Linux/qt_plugin.conf 
       #in standard bash format, ie:  export VARIABLE=value
-      file="$HOME/.config/MX-Linux/qt_plugin.conf"
+      file="$HOME/.config/MX-Linux/xfce-environment-variables.conf"
       if [ -e "$file" ]; then
 		source "$file"
 	  fi
