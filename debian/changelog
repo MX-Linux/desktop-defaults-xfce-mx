@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (25.04.03mx25) mx; urgency=medium
+
+  * allow QT style plugin to be defined in $HOME/.config/MX-Linux/qt_plugin.conf
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 30 Apr 2025 20:03:29 -0400
+
 desktop-defaults-mx-xfce (25.04.02mx25) mx; urgency=medium
 
   * add xfce-modified-default-background to depends of metapackage

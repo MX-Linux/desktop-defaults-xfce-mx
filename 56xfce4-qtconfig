@@ -1,7 +1,10 @@
-# Set QT scale factor for Xfce 
-#  Also set extra environment variables to only pass to Xfce environment
 # /etc/X11/Xsession.d/56xfce4-qtconfig
-#
+
+# Set QT scale factor for Xfce 
+# set qt environment variables to follow user chosen platform
+# if appropriate plugins are installed, values include gtk2, qt5ct, qt6ct
+# $HOME/.config/MX-Linux/qt_plugin.conf can hold a user settable value
+
 BASESTARTUP=$(basename "$STARTUP" | cut -d\  -f1)
 if [ "$BASESTARTUP" = x-session-manager ]; then
     BASESTARTUP=$(basename $(readlink /etc/alternatives/x-session-manager))
@@ -9,12 +12,18 @@ fi
 case "$BASESTARTUP" in
   xfce4-session|startxfce4)
       #set environment variables to follow user chosen platform
-      #put whatever environment variable you need in $HOME/.config/MX-Linux/qt_plugin.conf 
-      #in standard bash format, ie:  export VARIABLE=value
-      file="$HOME/.config/MX-Linux/xfce-environment-variables.conf"
+      #put whatever environment plugin name you need in $HOME/.config/MX-Linux/qt_plugin.conf 
+      #example:  gtk2
+      #by default variable is not set
+      file="$HOME/.config/MX-Linux/qt_plugin.conf"
       if [ -e "$file" ]; then
-		source "$file"
-	  fi
+	plugin=$(cat "$file")
+	if [ -n "$plugin" ]; then
+	    export QT_QPA_PLATFORMTHEME="$plugin"
+            export QT_PLATFORMTHEME="$plugin"
+            export QT_PLATFORM_PLUGIN="$plugin"
+        fi
+      fi
       if command -v xfconf-query >/dev/null; then
          export QT_SCALE_FACTOR=$(xfconf-query -c xsettings -p /Gdk/WindowScalingFactor 2>/dev/null)
          [ -z "${QT_SCALE_FACTOR}" ] && unset QT_SCALE_FACTOR
