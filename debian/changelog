@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (25.05.01mx25) mx; urgency=medium
+
+  * gtk2 plugin by default
+  * allow unset value or custom value
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 02 May 2025 20:41:40 -0400
+
 desktop-defaults-mx-xfce (25.04.03mx25) mx; urgency=medium
 
   * allow QT style plugin to be defined in $HOME/.config/MX-Linux/qt_plugin.conf
