@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (25.05.03mx25) mx; urgency=medium
+
+  * remove Papirus-mxblue
+  * use Papirus-Light by default
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 23 May 2025 22:21:34 -0400
+
 desktop-defaults-mx-xfce (25.05.02mx25) mx; urgency=medium
 
   * use matcha themes
