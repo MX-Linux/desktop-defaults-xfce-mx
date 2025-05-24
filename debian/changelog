@@ -1,4 +1,4 @@
-desktop-defaults-mx-xfce (25.05.03mx25) mx; urgency=medium
+desktop-defaults-mx-xfce (25.05.04mx25) mx; urgency=medium
 
   * remove Papirus-mxblue
   * use Papirus-Light by default
