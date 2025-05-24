@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (25.05.04mx26) UNRELEASED; urgency=medium
+
+  * remove percentage label from power panel plugin by default 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 24 May 2025 14:53:43 -0400
+
 desktop-defaults-mx-xfce (25.05.04mx25) mx; urgency=medium
 
   * remove Papirus-mxblue
