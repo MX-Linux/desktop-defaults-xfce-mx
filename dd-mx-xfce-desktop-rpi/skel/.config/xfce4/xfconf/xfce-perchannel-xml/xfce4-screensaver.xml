@@ -12,12 +12,12 @@
     <property name="embedded-keyboard" type="empty">
       <property name="enabled" type="bool" value="true"/>
       <property name="command" type="string" value="onboard -e"/>
-      <property name="displayed" type="bool" value="true"/>
+      <property name="displayed" type="bool" value="false"/>
     </property>
     <property name="sleep-activation" type="bool" value="true"/>
     <property name="saver-activation" type="empty">
       <property name="enabled" type="bool" value="true"/>
     </property>
-    <property name="enabled" type="bool" value="false"/>
+    <property name="enabled" type="bool" value="true"/>
   </property>
 </channel>
