@@ -1,9 +1,10 @@
-desktop-defaults-mx-xfce (25.05.05mx25) UNRELEASED; urgency=medium
+desktop-defaults-mx-xfce (25.05.05mx25) mx; urgency=medium
 
   * remove percentage label from power panel plugin by default 
   * revert to Papirus-mxblue for default icon theme
+  * change location of menu icon
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 24 May 2025 14:53:43 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 04 Jun 2025 22:11:46 -0400
 
 desktop-defaults-mx-xfce (25.05.04mx25) mx; urgency=medium
 
