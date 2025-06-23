@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (25.06.01mx25) mx; urgency=medium
+
+  * add xfce-wayland-hidden
+  * hides non-working wayland session from Display Managers
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 22 Jun 2025 20:48:18 -0400
+
 desktop-defaults-mx-xfce (25.05.05mx25) mx; urgency=medium
 
   * remove percentage label from power panel plugin by default 
