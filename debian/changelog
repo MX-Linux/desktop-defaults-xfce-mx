@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (25.08.01mx25) mx; urgency=medium
+
+  * remove kbd.sh (sets terminate on X desktop)
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 03 Aug 2025 23:02:25 -0400
+
 desktop-defaults-mx-xfce (25.06.01mx25) mx; urgency=medium
 
   * add xfce-wayland-hidden
