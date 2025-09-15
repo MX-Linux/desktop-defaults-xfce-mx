@@ -18,6 +18,6 @@
     <property name="saver-activation" type="empty">
       <property name="enabled" type="bool" value="true"/>
     </property>
-    <property name="enabled" type="bool" value="true"/>
+    <property name="enabled" type="bool" value="false"/>
   </property>
 </channel>
