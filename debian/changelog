@@ -1,3 +1,10 @@
+desktop-defaults-mx-xfce (25.09.01mx25) mx; urgency=medium
+
+  * disable screen locking by default 
+  * important for live system when users don't know password
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 15 Sep 2025 19:25:43 -0400
+
 desktop-defaults-mx-xfce (25.08.01mx25) mx; urgency=medium
 
   * remove kbd.sh (sets terminate on X desktop)
