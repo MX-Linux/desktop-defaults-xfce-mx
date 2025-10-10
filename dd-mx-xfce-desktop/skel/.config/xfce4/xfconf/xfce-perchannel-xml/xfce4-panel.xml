@@ -65,7 +65,34 @@
         <value type="string" value="clipit"/>
       </property>
     </property>
-    <property name="plugin-20" type="string" value="whiskermenu"/>
+    <property name="plugin-20" type="string" value="whiskermenu">
+      <property name="button-title" type="string" value="Applications Menu"/>
+      <property name="button-icon" type="string" value="/usr/share/icons/mxfcelogo-rounded.png"/>
+      <property name="launcher-icon-size" type="int" value="1"/>
+      <property name="hover-switch-category" type="bool" value="true"/>
+      <property name="favorites-in-recent" type="bool" value="true"/>
+      <property name="menu-width" type="int" value="470"/>
+      <property name="menu-height" type="int" value="550"/>
+      <property name="command-switchuser" type="string" value="xfce4-session-logout --switch-user"/>
+      <property name="show-command-switchuser" type="bool" value="true"/>
+      <property name="favorites" type="array">
+        <value type="string" value="xfce4-run.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="thunar.desktop"/>
+        <value type="string" value="conky-toggle.desktop"/>
+        <value type="string" value="libreoffice-startcenter.desktop"/>
+        <value type="string" value="mx-tools.desktop"/>
+        <value type="string" value="mx-packageinstaller.desktop"/>
+        <value type="string" value="Help.desktop"/>
+        <value type="string" value="xfce4-taskmanager.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="Quick_System_Info.desktop"/>
+      </property>
+      <property name="recent" type="array">
+        <value type="string" value="mx-tools.desktop"/>
+        <value type="string" value="mx-welcome.desktop"/>
+      </property>
+    </property>
     <property name="plugin-1" type="string" value="clock">
       <property name="mode" type="uint" value="2"/>
       <property name="command" type="string" value="orage"/>

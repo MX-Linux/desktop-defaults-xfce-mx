@@ -1,3 +1,11 @@
+desktop-defaults-mx-xfce (25.10.01mx25) mx; urgency=medium
+
+  * add firefox and thunar to whisker favorites
+  * remove old whisker.rc config file (no longer used)
+  * migrate default whisker settings to xfconf files
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 09 Oct 2025 20:18:32 -0400
+
 desktop-defaults-mx-xfce (25.09.01mx25) mx; urgency=medium
 
   * disable screen locking by default 
