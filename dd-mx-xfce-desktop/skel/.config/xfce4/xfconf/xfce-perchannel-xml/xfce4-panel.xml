@@ -80,13 +80,13 @@
         <value type="string" value="firefox.desktop"/>
         <value type="string" value="thunar.desktop"/>
         <value type="string" value="conky-toggle.desktop"/>
-        <value type="string" value="libreoffice-startcenter.desktop"/>
+        <value type="string" value="Quick_System_Info.desktop"/>
         <value type="string" value="mx-tools.desktop"/>
         <value type="string" value="mx-packageinstaller.desktop"/>
         <value type="string" value="Help.desktop"/>
-        <value type="string" value="xfce4-taskmanager.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="Quick_System_Info.desktop"/>
+        <value type="string" value="libreoffice-startcenter.desktop"/>
+        <value type="string" value="xfce4-taskmanager.desktop"/>
       </property>
       <property name="recent" type="array">
         <value type="string" value="mx-tools.desktop"/>
