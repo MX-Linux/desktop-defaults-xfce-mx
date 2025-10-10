@@ -1,0 +1,10 @@
+#! /bin/sh
+
+set -e
+
+if [ -f /etc/skel/.config/xfce4/panel/whiskermenu-20.rc  ]; then
+    # cleanup old config
+    rm /etc/skel/.config/xfce4/panel/whiskermenu-20.rc
+fi
+ 
+exit 0
