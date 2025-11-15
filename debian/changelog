@@ -1,3 +1,9 @@
+desktop-defaults-mx-xfce (25.11.01mx25) mx; urgency=medium
+
+  * add gir1.2-libxfce4util-1.0 to metapackage depends
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 15 Nov 2025 18:44:57 -0500
+
 desktop-defaults-mx-xfce (25.10.01mx25) mx; urgency=medium
 
   * add firefox and thunar to whisker favorites
