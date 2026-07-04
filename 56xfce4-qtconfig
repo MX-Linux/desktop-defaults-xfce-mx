@@ -14,7 +14,10 @@ fi
 case "$BASESTARTUP" in
   xfce4-session|startxfce4)
       file="$HOME/.config/MX-Linux/qt_plugin.conf"
-      plugin="gtk2"
+      plugin=""
+      if [ -d /usr/share/doc/qt6gtk2 ]; then
+        plugin="gtk2"
+      fi
       if [ -e "$file" ]; then
         plugin=""
 		plugin=$(cat "$file")
